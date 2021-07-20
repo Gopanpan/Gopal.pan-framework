@@ -13,18 +13,17 @@ public class AESTest {
 
     public static void main(String[] args) {
         String stringKey = AESEncrypt.createStringKey();
-        System.out.println("秘钥 " + stringKey);
-        StringJoiner stringJoiner = new StringJoiner("");
-        for (int x = 0; x < 6144; x ++){
-            stringJoiner.add("测");
-        }
 
-        String encrypt = AESEncrypt.encrypt(stringJoiner.toString(), stringKey);
-        System.out.println("密文 "+ encrypt);
-        System.out.println("密文长度 " + encrypt.length()); // 16408
-        String decrypt = AESEncrypt.decrypt(encrypt, stringKey);
-        System.out.println("解密 " + decrypt);
-        System.out.println(decrypt.length());
+
+        String encrypt = AESEncrypt.encrypt("!QAZx4r4ssfggttsw23eDCfER%1234er56ty7u", stringKey);
+        System.out.println("手机号 "+ encrypt);
+        System.out.println(encrypt.length());
+
+
+
+        String idCard = AESEncrypt.encrypt("50023519901104401X", stringKey);
+        System.out.println("idCard "+ idCard);
+        System.out.println(idCard.length());
 
 
     }

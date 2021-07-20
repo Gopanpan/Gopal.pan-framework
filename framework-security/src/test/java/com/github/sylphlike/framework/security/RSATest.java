@@ -17,9 +17,10 @@ public class RSATest {
         String publicKey = keyMap.get(RSAEncrypt.PUBLIC_KEY);
         String privateKey = keyMap.get(RSAEncrypt.PRIVATE_KEY);
 
-        String data = "name=Gopal.pan&age=18&phone=15923508369&assets=89877265";
+        String data = "!QAZx4r4ssfggttsw23eDCfER%1234er56ty7u";
         String sign = RSAEncrypt.sign(data, privateKey);
         System.out.println(sign);
+        System.out.println(sign.length());
 
 
 

@@ -108,6 +108,7 @@
                         <nonFilteredFileExtension>pem</nonFilteredFileExtension>
                         <nonFilteredFileExtension>pfx</nonFilteredFileExtension>
                         <nonFilteredFileExtension>p12</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>db</nonFilteredFileExtension>
                     </nonFilteredFileExtensions>
                     <delimiters>
                         <delimiter>@</delimiter>

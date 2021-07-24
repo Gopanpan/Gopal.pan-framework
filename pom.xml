@@ -239,7 +239,7 @@
         <pagehelper.version>5.2.1</pagehelper.version>
         <mybatis-springboot-starter.version>2.2.0</mybatis-springboot-starter.version>
         <mybatis-plus-boot-starter.version>3.4.3.1</mybatis-plus-boot-starter.version>
-        <sharding-jdbc-spring-boot-starter.version>4.1.1</sharding-jdbc-spring-boot-starter.version>
+        <sharding-jdbc-spring-boot-starter.version>4.1.0</sharding-jdbc-spring-boot-starter.version>
         <poi.version>3.17</poi.version>
         <itextpdf.version>5.5.13.2</itextpdf.version>
         <itext-asian.version>5.2.0</itext-asian.version>

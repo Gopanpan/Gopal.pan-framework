@@ -153,6 +153,11 @@
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <!--tag标签名-->
                     <tagNameFormat>v@{project.version}</tagNameFormat>
+
+                    <useReleaseProfile>false</useReleaseProfile>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <arguments>-DskipTests</arguments>
                 </configuration>
             </plugin>
         </plugins>
@@ -213,6 +218,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <java.version>11</java.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <skipTests>true</skipTests>
@@ -222,6 +228,7 @@
         <sonar-maven-plugin.version>3.7.0.1746</sonar-maven-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <maven-model.version>3.6.3</maven-model.version>
+
         <maven-javadoc-plugin.version>3.3.0</maven-javadoc-plugin.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
@@ -329,19 +336,14 @@
                 <scope>import</scope>
             </dependency>
 
+
+            <!--Three-party component dependency package-->
             <dependency>
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-spring-boot-starter</artifactId>
                 <version>${redisson-spring-boot-starter.version}</version>
             </dependency>
 
-
-
-
-
-
-
-            <!--Three-party component dependency package-->
             <dependency>
                 <groupId>com.qiniu</groupId>
                 <artifactId>qiniu-java-sdk</artifactId>

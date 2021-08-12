@@ -24,7 +24,7 @@ public class SixRandomCode {
      * @return String
      * @author  Gopal.pan
      */
-    public static String toSerialCode(int sequence) {
+    public static String toSerialCode(long sequence) {
         char[] buf = new char[32];
         int charPos = 32;
 
@@ -55,9 +55,9 @@ public class SixRandomCode {
      * @return int
      * @author  Gopal.pan
      */
-    public static int codeToId(String code) {
+    public static long codeToId(String code) {
         char[] chs = code.toCharArray();
-        int res = 0;
+        long res = 0L;
         for (int i = 0; i < chs.length; i++) {
             int ind = 0;
             for (int j = 0; j < BASE_LENGTH; j++) {
@@ -77,5 +77,4 @@ public class SixRandomCode {
         }
         return res;
     }
-
 }

@@ -30,7 +30,7 @@ public class GoSerializer {
     public static byte[] serialize(Object obj)  {
         ByteArrayOutputStream bis = null;
         ObjectOutputStream os = null;
-        byte[] byteArray = (byte[])null;
+        byte[] byteArray = null;
 
         try {
             bis = new ByteArrayOutputStream();

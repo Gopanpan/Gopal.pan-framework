@@ -39,7 +39,12 @@ public class JsonConfig {
     private static final Pattern TIME_PATTERN = Pattern.compile("^\\d{1,2}(\\:\\d{1,2}){2}$");
 
 
-    public static ObjectMapper mapper(){
+    private JsonConfig() {}
+    private static final ObjectMapper objectMapper = objectMapper();
+    public static ObjectMapper mapper(){ return objectMapper; }
+
+
+    private static ObjectMapper objectMapper(){
         ObjectMapper objectMapper = new ObjectMapper();
         JavaTimeModule javaTimeModule = new JavaTimeModule();
         javaTimeModule.addSerializer(LocalDateTime.class, new LocalDateTimeSerializer());

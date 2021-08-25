@@ -74,7 +74,7 @@ public class BaseController {
                 UserContextHolder.setUserAttributes(userAttributes);
             }
         } catch (JsonProcessingException e) {
-            LOGGER.error("【framework-web】初始化请求对象,系统异常", e);
+            LOGGER.error("【FW-web】初始化请求对象,系统异常", e);
         }
 
     }
@@ -127,10 +127,10 @@ public class BaseController {
         try {
             return exception.execute();
         } catch (ServiceException e) {
-            LOGGER.error("【framework-web】【{}】{},业务异常,[{}]", logHeadline(),LogDesc,StringUtils.join("错误码:",e.getCode(),"错误描述:", e.getMsg()));
+            LOGGER.error("【FW-web】【{}】{},业务异常,[{}]", logHeadline(),LogDesc,StringUtils.join("错误码:",e.getCode(),"错误描述:", e.getMsg()));
             return Response.error(e);
         } catch (Exception e){
-            LOGGER.error("【framework-web】【{}】{},系统异常", logHeadline(),LogDesc,e);
+            LOGGER.error("【FW-web】【{}】{},系统异常", logHeadline(),LogDesc,e);
             return Response.error(FReply.FW_UNKNOWN_ERROR);
         }
     }

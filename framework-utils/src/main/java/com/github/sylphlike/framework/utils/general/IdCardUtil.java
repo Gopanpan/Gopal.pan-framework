@@ -203,12 +203,12 @@ public class IdCardUtil {
 					if (idCardY[idCardMod].toUpperCase().equals(String.valueOf(idCardLast).toUpperCase())) {
 						return true;
 					} else {
-						LOGGER.info("【framework-utils】身份证验证错误,最后一位验证位应为[{}]",idCardY[idCardMod].toUpperCase());
+						LOGGER.info("【FW-utils】身份证验证错误,最后一位验证位应为[{}]",idCardY[idCardMod].toUpperCase());
 						return false;
 					}
 
 				} catch (Exception e) {
-					LOGGER.error("【framework-utils】身份证验证异常",e);
+					LOGGER.error("【FW-utils】身份证验证异常",e);
 					return false;
 				}
 			}

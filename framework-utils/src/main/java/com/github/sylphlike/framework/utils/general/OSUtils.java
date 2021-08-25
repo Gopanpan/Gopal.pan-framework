@@ -41,7 +41,7 @@ public class OSUtils {
             }
             return INTRANET_IP =  InetAddress.getLocalHost().getHostAddress();
         } catch(Exception e){
-            LOGGER.error("【framework-utils】获取内网IP地址时发生异常",e);
+            LOGGER.error("【FW-utils】获取内网IP地址时发生异常",e);
         }
         return null;
     }
@@ -73,7 +73,7 @@ public class OSUtils {
                 }
             }
         } catch(Exception e){
-            LOGGER.error("【framework-utils】获取外网网IP地址时发生异常",e);
+            LOGGER.error("【FW-utils】获取外网网IP地址时发生异常",e);
         }
         return null;
     }
@@ -106,10 +106,10 @@ public class OSUtils {
             if(tmpMacList.size()<=0){return tmpMacList;}
             List<String> unique = tmpMacList.stream().distinct().collect(Collectors.toList());
 
-            LOGGER.info("【framework-utils】当前系统的MAC地址信息为[{}]",unique);
+            LOGGER.info("【FW-utils】当前系统的MAC地址信息为[{}]",unique);
             return unique;
         } catch (Exception e) {
-            LOGGER.error("【framework-utils】获取MAC地址时发生异常",e);
+            LOGGER.error("【FW-utils】获取MAC地址时发生异常",e);
         }
         return null;
     }
@@ -125,7 +125,7 @@ public class OSUtils {
             InetAddress localHost = InetAddress.getLocalHost();
             return HOST_NAME = localHost.getHostName();
         } catch (UnknownHostException e) {
-            LOGGER.error("【framework-utils】获取host名称时发生异常",e);
+            LOGGER.error("【FW-utils】获取host名称时发生异常",e);
         }
 
         return null;

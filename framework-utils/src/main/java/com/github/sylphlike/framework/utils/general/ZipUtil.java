@@ -34,7 +34,7 @@ public class ZipUtil {
         try {
             if(!zipFile.endsWith(".zip")){
                 flag = false;
-                LOGGER.info("【framework-utils】文件压缩,压缩文件保存名称不合法 文件名[{}]",zipFile);
+                LOGGER.info("【FW-utils】文件压缩,压缩文件保存名称不合法 文件名[{}]",zipFile);
             }else {
                 validateFiles(new File(zipFile),new File(originDir));
 

@@ -53,7 +53,7 @@ public class BeanMapUtils {
             }
             return map;
         } catch (Exception e) {
-            LOGGER.error("【framework-utils】对象转map发生异常",e);
+            LOGGER.error("【FW-utils】对象转map发生异常",e);
         }
         return null;
     }
@@ -86,7 +86,7 @@ public class BeanMapUtils {
             }
             return obj;
         }catch (Exception e){
-            LOGGER.error("【framework-utils】maps转对象时发生异常",e);
+            LOGGER.error("【FW-utils】maps转对象时发生异常",e);
         }
 
         return null;

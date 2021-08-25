@@ -33,7 +33,7 @@ public class ParamFormat {
                 Object arg = args[i];
                 if (arg instanceof MultipartFile || arg instanceof ServletRequest || arg instanceof ServletResponse
                         || arg instanceof BeanPropertyBindingResult) {
-                    LOGGER.info("【framework-web】请求参数格式化,参数类型在不需要格式化处理");
+                    LOGGER.info("【FW-web】请求参数格式化,参数类型在不需要格式化处理");
                     continue;
                 }
                 map.put(parameterNames[i],arg);
@@ -41,7 +41,7 @@ public class ParamFormat {
             return mapper.writeValueAsString(map);
 
         } catch (Exception e) {
-            LOGGER.error("【framework-web】请求参数格式化处理异常,返回原始参数", e);
+            LOGGER.error("【FW-web】请求参数格式化处理异常,返回原始参数", e);
             return  Arrays.toString(args);
         }
 

@@ -29,7 +29,7 @@ public class UUIDCache {
         }else {
 
             if (LOGGER.isDebugEnabled()){
-                LOGGER.debug("【framework-basis】获取traceID,队列中缓存数据使用完毕,开启线程填充缓存");
+                LOGGER.debug("【FW-adapt】获取traceID,队列中缓存数据使用完毕,开启线程填充缓存");
             }
             String uuid = UUID.randomUUID().toString().replaceAll("-", "");
 
@@ -39,7 +39,7 @@ public class UUIDCache {
                         boolean offer = queue.offer(UUID.randomUUID().toString().replaceAll("-", ""));
                         if (!offer){
                             if (LOGGER.isDebugEnabled()){
-                                LOGGER.debug("framework-basis】获取traceID,队列中缓存数据使用完毕,线程填充缓存执行完成");
+                                LOGGER.debug("【FW-adapt】获取traceID,队列中缓存数据使用完毕,线程填充缓存执行完成");
                             }
                             return;
                         }

@@ -91,15 +91,15 @@ public class HttpUtils {
         try(CloseableHttpClient httpclient = HttpClients.createDefault()) {
             String buildUrl = buildUrl(url, params);
             if(StringUtils.isEmpty(buildUrl)){
-                LOGGER.info("【framework-utils】GET请求地址为空,不发送请求");
+                LOGGER.info("【FW-utils】GET请求地址为空,不发送请求");
                 return "";
 
             }
-            LOGGER.info("【framework-utils】 GET请求信息为：[{}]",buildUrl);
+            LOGGER.info("【FW-utils】 GET请求信息为：[{}]",buildUrl);
             HttpGet httpGet = new HttpGet(buildUrl);
             httpGet.setConfig(requestConfig);
             String response = httpclient.execute(httpGet, responseHandler());
-            LOGGER.info("【framework-utils】 GET请求响应结果为：[{}]",response);
+            LOGGER.info("【FW-utils】 GET请求响应结果为：[{}]",response);
             httpGet.abort();
             return response;
         }
@@ -242,20 +242,20 @@ public class HttpUtils {
     private static String doJsonPost(CloseableHttpClient httpClient, String url, Object json) throws IOException {
 
         if(StringUtils.isEmpty(url)){
-            LOGGER.info("【framework-utils】POST请求地址为空,不发送请求");
+            LOGGER.info("【FW-utils】POST请求地址为空,不发送请求");
             return "";
 
         }
 
         HttpPost httpPost = new HttpPost(url);
-        LOGGER.info("【framework-utils】 POST请求地址为：[{}],请求参数为：[{}]",url,json.toString());
+        LOGGER.info("【FW-utils】 POST请求地址为：[{}],请求参数为：[{}]",url,json.toString());
         httpPost.setConfig(requestConfig);
         StringEntity stringEntity = new StringEntity(json.toString(), Consts.UTF_8);
         stringEntity.setContentEncoding("UTF-8");
         stringEntity.setContentType("application/json");
         httpPost.setEntity(stringEntity);
         String response = httpClient.execute(httpPost, responseHandler());
-        LOGGER.info("【framework-utils】POST请求响应结果为[{}]",response);
+        LOGGER.info("【FW-utils】POST请求响应结果为[{}]",response);
         return response;
     }
 
@@ -263,16 +263,16 @@ public class HttpUtils {
     private static String doMapPost(CloseableHttpClient httpClient, String url, Map<String, Object> params) throws IOException {
 
         if(StringUtils.isEmpty(url)){
-            LOGGER.info("【framework-utils】POST请求地址为空,不发送请求");
+            LOGGER.info("【FW-utils】POST请求地址为空,不发送请求");
             return "";
 
         }
         HttpPost httpPost = new HttpPost(url);
         httpPost.setConfig(requestConfig);
         httpPost.setEntity(buildFormParams(params));
-        LOGGER.info("【framework-utils】POST请求地址为[{}],请求参数[{}]",url,params.toString());
+        LOGGER.info("【FW-utils】POST请求地址为[{}],请求参数[{}]",url,params.toString());
         String response = httpClient.execute(httpPost, responseHandler());
-        LOGGER.info("【framework-utils】POST请求响应结果为[{}]",response);
+        LOGGER.info("【FW-utils】POST请求响应结果为[{}]",response);
         httpPost.abort();
         return response;
     }

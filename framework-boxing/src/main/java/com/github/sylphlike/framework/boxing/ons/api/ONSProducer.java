@@ -37,10 +37,10 @@ public class ONSProducer {
      * @author  Gopal.pan
      */
     public SendResult  sendMessage(String topic,String tags,Object message) {
-        logger.info("【framework-boxing】 ONS发送消息,topic[{}] tags[{}] message[{}] ",topic,tags,message);
+        logger.info("【FW-boxing】 ONS发送消息,topic[{}] tags[{}] message[{}] ",topic,tags,message);
         Message sendMessage = new Message(topic, tags, GoSerializer.serialize(message));
         SendResult send = producer.send(sendMessage);
-        logger.info("【framework-boxing】 ONS发送结果,SendResult[{}]  ",send);
+        logger.info("【FW-boxing】 ONS发送结果,SendResult[{}]  ",send);
         return send;
     }
 
@@ -59,10 +59,10 @@ public class ONSProducer {
      * @author  Gopal.pan
      */
     public SendResult  sendMessage(MessageDefinition messageDefinition,Object message) {
-        logger.info("【framework-boxing】 ONS发送消息,messageDefinition[{}] message[{}]",messageDefinition,message);
+        logger.info("【FW-boxing】 ONS发送消息,messageDefinition[{}] message[{}]",messageDefinition,message);
         Message sendMessage = new Message(messageDefinition.getTopic(), messageDefinition.getTag(),  GoSerializer.serialize(message));
         SendResult send = producer.send(sendMessage);
-        logger.info("【framework-boxing】 ONS发送结果,SendResult[{}]  ",send);
+        logger.info("【FW-boxing】 ONS发送结果,SendResult[{}]  ",send);
         return send;
 
     }
@@ -83,11 +83,11 @@ public class ONSProducer {
      * @author  Gopal.pan
      */
     public SendResult  sendMessage(String topic,String tags,Object message,long deliverTime) {
-        logger.info("【framework-boxing】 ONS发送消息,topic[{}] tags[{}] message[{}] deliverTime[{}]",topic,tags,message,deliverTime);
+        logger.info("【FW-boxing】 ONS发送消息,topic[{}] tags[{}] message[{}] deliverTime[{}]",topic,tags,message,deliverTime);
         Message sendMessage = new Message(topic, tags, GoSerializer.serialize(message));
         sendMessage.setStartDeliverTime(deliverTime);
         SendResult send = producer.send(sendMessage);
-        logger.info("【framework-boxing】 ONS发送结果,SendResult[{}]  ",send);
+        logger.info("【FW-boxing】 ONS发送结果,SendResult[{}]  ",send);
         return send;
 
     }
@@ -105,10 +105,10 @@ public class ONSProducer {
      * @author  Gopal.pan
      */
     public SendResult  sendMessage(MessageDefinition messageDefinition,String key,String message) {
-        logger.info("【framework-boxing】ONS发送消息,messageDefinition[{}] key[{}] message[{}] ",messageDefinition,key,message);
+        logger.info("【FW-boxing】ONS发送消息,messageDefinition[{}] key[{}] message[{}] ",messageDefinition,key,message);
         Message sendMessage = new Message(messageDefinition.getTopic(), messageDefinition.getTag(),key, message.getBytes(StandardCharsets.UTF_8));
         SendResult send = producer.send(sendMessage);
-        logger.info("【framework-boxing】ONS发送结果,SendResult[{}]  ",send);
+        logger.info("【FW-boxing】ONS发送结果,SendResult[{}]  ",send);
         return send;
 
     }
@@ -129,11 +129,11 @@ public class ONSProducer {
      * @author  Gopal.pan
      */
     public SendResult  sendMessage(String topic,String tags,String key,String message,long deliverTime) {
-        logger.info("【framework-boxing】ONS发送消息,topic[{}] tags[{}] key[{}] message[{}] deliverTime[{}]",topic,tags,key,message,deliverTime);
+        logger.info("【FW-boxing】ONS发送消息,topic[{}] tags[{}] key[{}] message[{}] deliverTime[{}]",topic,tags,key,message,deliverTime);
         Message sendMessage = new Message(topic, tags, message.getBytes(StandardCharsets.UTF_8));
         sendMessage.setStartDeliverTime(deliverTime);
         SendResult send = producer.send(sendMessage);
-        logger.info("【framework-boxing】ONS发送结果,SendResult[{}]  ",send);
+        logger.info("【FW-boxing】ONS发送结果,SendResult[{}]  ",send);
         return send;
 
     }

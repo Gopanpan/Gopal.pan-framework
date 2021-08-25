@@ -58,7 +58,7 @@ public abstract class AbstractTransaction<T>{
 
 
     public AbstractTransaction<T> recordTransactionContentLog(){
-        LOGGER.info("【framework-web】事物执行日志,logTitle[{}]; logMethod[{}]; requestArgs[{}]",logTitle,logMethod, requestArgs);
+        LOGGER.info("【FW-web】事物执行日志,logTitle[{}]; logMethod[{}]; requestArgs[{}]",logTitle,logMethod, requestArgs);
         return this;
     }
 

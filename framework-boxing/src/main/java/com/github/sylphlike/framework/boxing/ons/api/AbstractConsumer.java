@@ -50,11 +50,11 @@ public abstract class AbstractConsumer<T> implements MessageListener {
     @Override
     public Action consume(Message message, ConsumeContext context) {
         T t = (T) GoSerializer.deSerialize(message.getBody());
-        logger.info("【framework-boxing】收到消息,topic[{}],tag[{}],message[{}]",message.getTopic(),message.getTag(),t);
+        logger.info("【FW-boxing】收到消息,topic[{}],tag[{}],message[{}]",message.getTopic(),message.getTag(),t);
 
         AbstractConsumer<T> choose = consumerChooser.choose(message.getTopic() + ":" + message.getTag());
         if(StringUtils.isEmpty(choose)){
-            logger.info("【framework-boxing】MQ消息签收失败,不存在对应的消费实现类");
+            logger.info("【FW-boxing】MQ消息签收失败,不存在对应的消费实现类");
             return Action.CommitMessage;
         }
 

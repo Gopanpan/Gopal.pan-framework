@@ -81,7 +81,7 @@ public class ConcurrentThreadPool {
      * @author  Gopal.pan
      */
     public   <V> V submit(CallableTemplate<V> task) throws ExecutionException, InterruptedException {
-        LOGGER.info("【framework-web】 提交多线程任务 [{}]",task);
+        LOGGER.info("【FW-web】 提交多线程任务 [{}]",task);
         Future<V> result = threadPoolExecutor.submit(task);
         return result.get();
     }
@@ -100,9 +100,9 @@ public class ConcurrentThreadPool {
      */
     public <V> List<V> invokeAll(List<? extends CallableTemplate<V>> tasks)  throws InterruptedException, ExecutionException {
 
-        LOGGER.info("【framework-web】 批量多线程任务 提交任务数量为[{}]",tasks.size());
+        LOGGER.info("【FW-web】 批量多线程任务 提交任务数量为[{}]",tasks.size());
         List<Future<V>> tasksResult = threadPoolExecutor.invokeAll(tasks);
-        LOGGER.info("【framework-web】 批量多线程任务 批量任务执行完成");
+        LOGGER.info("【FW-web】 批量多线程任务 批量任务执行完成");
         List<V> resultList = new ArrayList<V>();
         for (Future<V> future : tasksResult) {
             resultList.add(future.get());

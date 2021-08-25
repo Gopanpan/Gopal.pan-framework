@@ -64,7 +64,7 @@ public class EndpointHandler {
         Map<Class<?>,List<ApiVO.ApiInfo>> groupMap = new HashMap<>();
 
         Map<RequestMappingInfo, HandlerMethod> map = requestMappingHandlerMapping.getHandlerMethods();
-        LOGGER.info("【framework-web】系统中全部URL地址个数为[{}]",map.size());
+        LOGGER.info("【FW-web】系统中全部URL地址个数为[{}]",map.size());
 
         ApiVO.ApiInfo apiInfo;
 

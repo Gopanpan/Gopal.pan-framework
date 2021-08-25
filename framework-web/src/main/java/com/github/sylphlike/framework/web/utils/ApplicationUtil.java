@@ -54,11 +54,11 @@ public class ApplicationUtil {
                             if(line.startsWith("Implementation-Title")){
                                 String[] name = line.split(":");
                                 projectName = name[1].trim();
-                                LOGGER.info("【framework-web】jar包方式启动,当前项目名称[{}]",projectName);
+                                LOGGER.info("【FW-web】jar包方式启动,当前项目名称[{}]",projectName);
                             }if(line.startsWith("Implementation-Version")){
                                 String[] version = line.split(":");
                                 projectVersion = version[1].trim();
-                                LOGGER.info("【framework-web】jar包方式启动,当前项目版本[{}]",projectVersion);
+                                LOGGER.info("【FW-web】jar包方式启动,当前项目版本[{}]",projectVersion);
                             }
 
                         }
@@ -85,7 +85,7 @@ public class ApplicationUtil {
             }
 
         } catch (IOException e) {
-            LOGGER.error("【framework-web】获取应用系统属性异常",e);
+            LOGGER.error("【FW-web】获取应用系统属性异常",e);
         }
 
     }

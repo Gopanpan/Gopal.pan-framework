@@ -59,7 +59,7 @@ public class EnumsPathProvider {
                 }
 
             } catch (IOException e1) {
-                LOGGER.error("【framework-storage】解析jar包文件异常",e1);
+                LOGGER.error("【FW-storage】解析jar包文件异常",e1);
             } finally {
                 if (null != jarFile) {
                     try {
@@ -88,7 +88,7 @@ public class EnumsPathProvider {
 
         for (File file : files) {
             if (file.isDirectory()) {
-                LOGGER.debug("【framework-storage】 获取到的包路径[{}]",file.getAbsolutePath());
+                LOGGER.debug("【FW-storage】 获取到的包路径[{}]",file.getAbsolutePath());
                 getImplementationClass(file.getAbsolutePath(),classes);
             }else {
                 String absolutePath = file.getAbsolutePath();

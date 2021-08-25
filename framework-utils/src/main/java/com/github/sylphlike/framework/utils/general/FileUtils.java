@@ -152,7 +152,7 @@ public class FileUtils {
             }
             data = output.toByteArray();
         } catch (Exception e) {
-            LOGGER.error("【framework-utils】图片转byte数组异常",e);
+            LOGGER.error("【FW-utils】图片转byte数组异常",e);
         }
 
         return data;
@@ -172,7 +172,7 @@ public class FileUtils {
         try( FileImageOutputStream imageOutput = new FileImageOutputStream(new File(path))){
             imageOutput.write(data, 0, data.length);
         } catch(Exception ex) {
-            LOGGER.error("【framework-utils】byte数组转图片异常",ex);
+            LOGGER.error("【FW-utils】byte数组转图片异常",ex);
         }
     }
 
@@ -191,11 +191,11 @@ public class FileUtils {
             if (file.delete()) {
                 return true;
             } else {
-                LOGGER.info("【framework-utils】删除文件失败,文件全路径[{}]",fileName);
+                LOGGER.info("【FW-utils】删除文件失败,文件全路径[{}]",fileName);
                 return false;
             }
         } else {
-            LOGGER.info("【framework-utils】删除文件失败,文件全路径[{}]",fileName);
+            LOGGER.info("【FW-utils】删除文件失败,文件全路径[{}]",fileName);
             return false;
         }
     }

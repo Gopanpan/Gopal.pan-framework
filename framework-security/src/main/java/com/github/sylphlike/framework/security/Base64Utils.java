@@ -37,7 +37,7 @@ public class Base64Utils {
             Base64.Encoder encoder = Base64.getEncoder();
             s = encoder.encodeToString(b);
         } catch (Exception e) {
-            LOGGER.error("【framework-security】 base64加密异常",e);
+            LOGGER.error("【FW-security】 base64加密异常",e);
         }
 
 
@@ -80,7 +80,7 @@ public class Base64Utils {
                 result = new String(decode, StandardCharsets.UTF_8);
             }
         } catch (Exception e) {
-            LOGGER.error("【framework-security】 base64解密异常",e);
+            LOGGER.error("【FW-security】 base64解密异常",e);
         }
         return result;
 	}

@@ -29,7 +29,7 @@ public class MsgProcessTask implements Runnable {
         ApplicationContext applicationContext = SpringContextUtil.getApplicationContext();
         Map<String, MsgConsumer> beansOfType = applicationContext.getBeansOfType(MsgConsumer.class);
         beansOfType.forEach((k,v) ->{
-            LOGGER.info("【framework-web】队列任务,队列实现key[{}],实现类[{}]",k,v);
+            LOGGER.info("【FW-web】队列任务,队列实现key[{}],实现类[{}]",k,v);
         });
         msgConsumerMap.putAll(beansOfType);
 
@@ -45,13 +45,13 @@ public class MsgProcessTask implements Runnable {
             try {
                 MsgEvent<?> msgEvent = MsgEventManager.msgEventDelayQueue.poll(FLUSH_INTERVAL_MS, TimeUnit.MILLISECONDS);
                 if(msgEvent != null){
-                    LOGGER.info("【framework-web】队列任务,到期消费的消息为[{}]",msgEvent);
+                    LOGGER.info("【FW-web】队列任务,到期消费的消息为[{}]",msgEvent);
                     MsgConsumer msgConsumer = msgConsumerMap.get(msgEvent.getBusinessDealClass());
                     if(null != msgConsumer){
-                        LOGGER.info("【framework-web】队列任务, 当前处理任务实现类为[{}]",msgConsumer);
+                        LOGGER.info("【FW-web】队列任务, 当前处理任务实现类为[{}]",msgConsumer);
                         msgConsumer.doMsg(msgEvent);
                     }else {
-                        LOGGER.info("【framework-web】到期消息为找到对应的业务处理类,请检查业务端实现");
+                        LOGGER.info("【FW-web】到期消息为找到对应的业务处理类,请检查业务端实现");
                     }
                 }
             } catch (InterruptedException e) {

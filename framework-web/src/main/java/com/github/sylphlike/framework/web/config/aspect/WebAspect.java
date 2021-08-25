@@ -53,15 +53,11 @@ public class WebAspect {
         AssertUtils.notNull(attributes,"ServletRequestAttributes is null");
         HttpServletRequest request = attributes.getRequest();
 
-        MethodSignature sign = (MethodSignature) joinPoint.getSignature();
-        String description =  requestAnnotationName(sign.getMethod());
-
         Signature signature = joinPoint.getSignature();
         MethodSignature methodSignature = (MethodSignature) signature;
 
-        LOGGER.info("【framework-web】【request】[{}][{}][{}],params[{}]",
+        LOGGER.info("【FW-web】【request】{} {},params[{}]",
                 request.getMethod(),
-                description,
                 request.getRequestURI(),
                 ParamFormat.format(methodSignature.getParameterNames(), joinPoint.getArgs()));
     }
@@ -81,22 +77,22 @@ public class WebAspect {
                         logStreamLine.setCode(response.getCode());
                         logStreamLine.setMsg(response.getMsg());
                         logStreamLine.setTimestamp(response.getTimestamp());
-                        LOGGER.info("【framework-web】【response】过滤业务参数[{}]", mapper.writeValueAsString( logStreamLine) );
+                        LOGGER.info("【FW-web】【response】过滤业务参数[{}]", mapper.writeValueAsString( logStreamLine) );
                     }else {
-                        LOGGER.info("【framework-web】【response】当前返回实体不为系统定义类型,[{}]",ret);
+                        LOGGER.info("【FW-web】【response】当前返回实体不为系统定义类型,[{}]",ret);
                     }
                 }else {
                     if(ret instanceof Response){
-                        LOGGER.info("【framework-web】【response】data[{}]", mapper.writeValueAsString( ret));
+                        LOGGER.info("【FW-web】【response】data[{}]", mapper.writeValueAsString( ret));
                     }else {
-                        LOGGER.info("【framework-web】【response】,当前返回实体不为系统定义类型,[{}]",ret);
+                        LOGGER.info("【FW-web】【response】,当前返回实体不为系统定义类型,[{}]",ret);
                     }
                 }
 
                 UserContextHolder.resetUserAttributes();
             }
         } catch (JsonProcessingException e) {
-            LOGGER.error("【framework-web】response,json格式化响应参数异常",e);
+            LOGGER.error("【FW-web】response,json格式化响应参数异常",e);
         }
 
     }

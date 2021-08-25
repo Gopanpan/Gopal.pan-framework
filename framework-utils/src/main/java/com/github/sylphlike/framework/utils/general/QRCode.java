@@ -80,7 +80,7 @@ public class QRCode {
             Path path = FileSystems.getDefault().getPath(savePath);
             MatrixToImageWriter.writeToPath(bitMatrix, PICTURE_TYPE, path);
         } catch (Exception e) {
-            LOGGER.error("【framework-utils】生成二维码时系统异常",e);
+            LOGGER.error("【FW-utils】生成二维码时系统异常",e);
         }
     }
 
@@ -121,7 +121,7 @@ public class QRCode {
             MatrixToImageWriter.writeToStream(bitMatrix, PICTURE_TYPE, pngOutputStream);
             pngData = pngOutputStream.toByteArray();
         } catch (Exception e) {
-            LOGGER.error("【framework-utils】生成二维码时系统异常",e);
+            LOGGER.error("【FW-utils】生成二维码时系统异常",e);
         }
         return pngData;
     }
@@ -173,7 +173,7 @@ public class QRCode {
             ImageIO.write(image,PICTURE_TYPE,out);
             return out.toByteArray();
         } catch (IOException e) {
-            LOGGER.error("【framework-utils】生成二维码时系统异常",e);
+            LOGGER.error("【FW-utils】生成二维码时系统异常",e);
         }
         return null;
     }
@@ -190,7 +190,7 @@ public class QRCode {
         try {
             return pressContents(contents,title);
         } catch (Exception e) {
-            LOGGER.error("【framework-utils】生成二维码时系统异常",e);
+            LOGGER.error("【FW-utils】生成二维码时系统异常",e);
         }
         return null;
     }
@@ -216,7 +216,7 @@ public class QRCode {
 
             FileUtils.byte2Image(bytes,filePath);
         } catch (Exception e) {
-            LOGGER.error("【framework-utils】生成二维码时系统异常",e);
+            LOGGER.error("【FW-utils】生成二维码时系统异常",e);
         }
     }
 

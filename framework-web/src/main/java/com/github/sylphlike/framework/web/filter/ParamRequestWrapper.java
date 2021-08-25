@@ -184,7 +184,7 @@ public class ParamRequestWrapper extends HttpServletRequestWrapper {
         String result = value;
 
         if (StringUtils.isNotBlank(result)) {
-            logger.info("【framework-web】xss拦截 原始值[{}]",result);
+            logger.info("【FW-web】xss拦截 原始值[{}]",result);
             boolean flag = false;
             if (result.contains("&")) {
                 result = result.replaceAll("&", "");
@@ -202,7 +202,7 @@ public class ParamRequestWrapper extends HttpServletRequestWrapper {
                 result = result.replaceAll("\'", "");
             }
 
-            logger.info("【framework-web】xss拦截,处理后的值[{}]",result);
+            logger.info("【FW-web】xss拦截,处理后的值[{}]",result);
         }
 
         return result;

@@ -60,17 +60,17 @@ public class BaseService {
                 return exec;
             }catch (DuplicateKeyException e){
                 transactionStatus.setRollbackOnly();
-                LOGGER.error("【framework-web】主键重复,事物回滚操作", e);
+                LOGGER.error("【FW-web】主键重复,事物回滚操作", e);
                 return Response.error(FReply.FW_DATE_DUPLICATE_KEY);
 
             }catch (ServiceException e){
                 transactionStatus.setRollbackOnly();
-                LOGGER.error("【framework-web】业务异常,事物回滚操作", e);
+                LOGGER.error("【FW-web】业务异常,事物回滚操作", e);
                 return  Response.error(e);
 
             }catch (Exception e) {
                 transactionStatus.setRollbackOnly();
-                LOGGER.error("【framework-web】系统异常", e);
+                LOGGER.error("【FW-web】系统异常", e);
                 return new Response<>(FReply.FW_DATA_TRANSACTION);
             }
         });
@@ -87,7 +87,7 @@ public class BaseService {
      * @author  Gopal.pan
      */
     protected Response<Void> checkAddData(int effectRow){
-        LOGGER.info("【framework-web】校验数据库单条数据入库,影响行数[{}]",effectRow);
+        LOGGER.info("【FW-web】校验数据库单条数据入库,影响行数[{}]",effectRow);
         if(effectRow == Constants.DIGITAL_ONE)
             return new Response<>();
         return new Response<>(FReply.FW_DATA_UNAFFECTED_ADD);
@@ -103,7 +103,7 @@ public class BaseService {
      * @author  Gopal.pan
      */
     protected Response<Void> checkUpdateData(int effectRow){
-        LOGGER.info("【framework-web】校验数据库单条数据修改,影响行数[{}]",effectRow);
+        LOGGER.info("【FW-web】校验数据库单条数据修改,影响行数[{}]",effectRow);
         if(effectRow == Constants.DIGITAL_ONE)
             return new Response<>();
         return new Response<>(FReply.FW_DATA_UNAFFECTED_UPDATE);
@@ -111,7 +111,7 @@ public class BaseService {
 
 
     protected Response<Void> checkDeleteData(int effectRow){
-        LOGGER.info("【framework-web】校验数据库单条数据删除,影响行数[{}]",effectRow);
+        LOGGER.info("【FW-web】校验数据库单条数据删除,影响行数[{}]",effectRow);
         if(effectRow == Constants.DIGITAL_ONE)
             return Response.success();
         return new Response<>(FReply.FW_DATA_UNAFFECTED_DELETE);

@@ -62,9 +62,9 @@ public class QiniuUtils  {
         try {
             String upToken = auth.uploadToken(qiniuconfig.getBucket());
             Response response = uploadManager.put(uploadByte, fileName, upToken);
-            LOGGER.info("【framework-boxing】七牛云上传文件返回结果[{}]",response);
+            LOGGER.info("【FW-boxing】七牛云上传文件返回结果[{}]",response);
         } catch (QiniuException e) {
-            LOGGER.error("【framework-boxing】七牛云上传文件系统异常",e);
+            LOGGER.error("【FW-boxing】七牛云上传文件系统异常",e);
             return false;
         }
 
@@ -123,7 +123,7 @@ public class QiniuUtils  {
 
             }
         } catch (IOException e) {
-            LOGGER.error("【framework-boxing】 下载文件时异常",e);
+            LOGGER.error("【FW-boxing】 下载文件时异常",e);
             flag = false;
 
         }finally {
@@ -158,7 +158,7 @@ public class QiniuUtils  {
             bucketManager.delete(qiniuconfig.getBucket(), fileName);
             reslut = true;
         } catch (QiniuException ex) {
-            LOGGER.error("【framework-boxing】七牛云删除文件系统异常",ex);
+            LOGGER.error("【FW-boxing】七牛云删除文件系统异常",ex);
         }
         return reslut;
     }
@@ -191,7 +191,7 @@ public class QiniuUtils  {
         try {
             bucketManager.move(qiniuconfig.getBucket(), oldFileName, qiniuconfig.getBucket(), toKey);
         } catch (QiniuException ex) {
-            LOGGER.error("【framework-boxing】重命名文件系统异常",ex);
+            LOGGER.error("【FW-boxing】重命名文件系统异常",ex);
             result = false;
         }
         return result;
@@ -208,7 +208,7 @@ public class QiniuUtils  {
 
         long expireSeconds = (expireTimeMillis - System.currentTimeMillis()) / 1000;
         String uploadToken = auth.uploadToken(qiniuconfig.getBucket(), null, expireSeconds, null, true);
-        LOGGER.info("【framework-boxing】生成的上传token[{}]",uploadToken);
+        LOGGER.info("【FW-boxing】生成的上传token[{}]",uploadToken);
         return uploadToken;
 
     }
@@ -235,7 +235,7 @@ public class QiniuUtils  {
         if(!qiniuconfig.isEnable())
             return;
 
-        LOGGER.info("【framework-boxing】初始化七牛云配置");
+        LOGGER.info("【FW-boxing】初始化七牛云配置");
         QiniuUtils.qiniuconfig = qiniuconfig;
         localTemp = qiniuconfig.getLocalTemp();
 

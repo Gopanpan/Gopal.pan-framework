@@ -35,14 +35,14 @@ public class ThirdLogAspect {
     public void doBefore(JoinPoint joinPoint) {
         String declaringTypeName = joinPoint.getSignature().getDeclaringTypeName();
         int index = declaringTypeName.lastIndexOf(".");
-        logger.info("【framework-web】third请求,执行方法[{}]; 参数[{}]",
+        logger.info("【FW-web】third请求,执行方法[{}]; 参数[{}]",
                 StringUtils.join(declaringTypeName.substring(++index) , CharsetUtil.CHAR_ENGLISH_DOT, joinPoint.getSignature().getName()),
                 ParamFormat.format(((MethodSignature)joinPoint.getSignature()).getParameterNames(), joinPoint.getArgs()));
     }
 
     @AfterReturning(returning = "ret", pointcut = "thirdRequestLog()")
     public void doAfterReturning(Object ret) {
-        logger.info("【framework-web】third响应,[{}]", ret);
+        logger.info("【FW-web】third响应,[{}]", ret);
     }
 
 }

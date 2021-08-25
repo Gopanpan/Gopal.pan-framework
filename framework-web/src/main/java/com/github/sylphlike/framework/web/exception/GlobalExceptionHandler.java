@@ -189,10 +189,10 @@ public class GlobalExceptionHandler {
         try {
             params = mapper.writeValueAsString(map);
         } catch (JsonProcessingException e) {
-           LOGGER.error("【framework-web】全局异常,参数格式化异常",e);
+           LOGGER.error("【FW-web】全局异常,参数格式化异常",e);
         }
 
-        LOGGER.error(StringUtils.join("【framework-web】全局异常",CharsetUtil.CHAR_ENGLISH_SPACE,
+        LOGGER.error(StringUtils.join("【FW-web】全局异常",CharsetUtil.CHAR_ENGLISH_SPACE,
                 "接口地址",CharsetUtil.CHAR_ENGLISH_BRACKET_START,request.getRequestURI(),CharsetUtil.CHAR_ENGLISH_BRACKET_END,CharsetUtil.STRING_ENGLISH_SEMICOLON_SPACE,
                 "客户端IP",CharsetUtil.CHAR_ENGLISH_BRACKET_START,request.getRemoteAddr(),CharsetUtil.CHAR_ENGLISH_BRACKET_END,CharsetUtil.STRING_ENGLISH_SEMICOLON_SPACE,
                 "请求参数",CharsetUtil.CHAR_ENGLISH_BRACKET_START,params,CharsetUtil.CHAR_ENGLISH_BRACKET_END,CharsetUtil.STRING_ENGLISH_SEMICOLON_SPACE,

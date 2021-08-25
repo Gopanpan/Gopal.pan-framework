@@ -38,7 +38,7 @@ public class ConfigurationExtend implements ConfigurationCustomizer {
         try {
             final List<Class<?>> allAssignedClass = EnumsPathProvider.getAllAssignedClass(scanningProperties.getEnumPackage());
             allAssignedClass.forEach((clazz) ->{
-                logger.info("【framework-storage】 mybatis枚举映射[{}]" , clazz);
+                logger.info("【FW-storage】 mybatis枚举映射[{}]" , clazz);
                 typeHandlerRegistry.register(clazz, GeneralTypeHandler.class);
             });
 

@@ -46,7 +46,7 @@ public class FileCharsetConverter {
                 convert(dirFile,fromCharsetName ,toCharsetName);
             }
         } catch (Exception e) {
-            LOGGER.error("【framework-utils】文件编码集转换,失败",e);
+            LOGGER.error("【FW-utils】文件编码集转换,失败",e);
         }
 
     }

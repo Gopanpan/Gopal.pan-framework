@@ -271,7 +271,7 @@ public class SliderVerification {
     private static int generateCutoutCoordinates(int templateImageWidth) {
 
         int xDistance = ThreadLocalRandom.current().nextInt(MIN_X_DISTANCE, ORI_WIDTH - templateImageWidth);
-        LOGGER.info("【framework-security】滑块验证,小图X轴坐标地址[{}]",xDistance);
+        LOGGER.info("【FW-security】滑块验证,小图X轴坐标地址[{}]",xDistance);
         return xDistance;
 
     }

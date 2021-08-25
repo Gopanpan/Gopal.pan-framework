@@ -46,7 +46,7 @@ public class ONSConfig<T>  {
     @ConditionalOnProperty(prefix ="sylphlike.framework.ons",name = "enable",havingValue = "true")
     @Bean(initMethod = "start", destroyMethod = "shutdown")
     public ProducerBean oneProducer() {
-        LOGGER.info("【framework-boxing】实例化MQ生产者");
+        LOGGER.info("【FW-boxing】实例化MQ生产者");
 
         ProducerBean producerBean = new ProducerBean();
         Properties properties = new Properties();
@@ -72,7 +72,7 @@ public class ONSConfig<T>  {
     @ConditionalOnProperty(prefix ="sylphlike.framework.ons",name = "enable",havingValue = "true")
     @Bean(initMethod = "start", destroyMethod = "shutdown")
     public ConsumerBean consumerBean() throws UniteConfigException {
-        LOGGER.info("【framework-boxing】实例化MQ消费者");
+        LOGGER.info("【FW-boxing】实例化MQ消费者");
 
         Properties properties = new Properties();
         properties.put(PropertyKeyConst.NAMESRV_ADDR, onsProperties.getNamesrvAddr());
@@ -92,7 +92,7 @@ public class ONSConfig<T>  {
         for (Subscription subscription : subscriptions) {
             AbstractConsumer<T> choose = consumerChooser.choose(subscription.getTopic() + ":" + subscription.getExpression());
             if(choose != null){
-                LOGGER.info("【framework-boxing】消费端实例[{}]",choose);
+                LOGGER.info("【FW-boxing】消费端实例[{}]",choose);
                 map.put(subscription, choose);
 
             }

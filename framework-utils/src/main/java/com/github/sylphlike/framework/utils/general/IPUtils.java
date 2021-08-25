@@ -98,7 +98,7 @@ public class IPUtils {
                 }
             }
         } catch (SocketException e) {
-            LOGGER.error("【framework-utils】获取服务器ID地址异常",e);
+            LOGGER.error("【FW-utils】获取服务器ID地址异常",e);
         }
 
         return null;

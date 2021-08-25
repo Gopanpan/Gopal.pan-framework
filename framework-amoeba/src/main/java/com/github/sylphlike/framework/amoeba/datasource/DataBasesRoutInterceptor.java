@@ -48,13 +48,13 @@ public class DataBasesRoutInterceptor implements Interceptor {
         SqlCommandType sqlCommandType = ms.getSqlCommandType();
 
         boolean useMaster = DataSourceContextHolder.get().isForceUseMaster();
-        LOGGER.debug("【framework-amoeba】强制路由到master数据库[{}]",useMaster);
+        LOGGER.debug("【FW-amoeba】强制路由到master数据库[{}]",useMaster);
 
         if(!useMaster && sqlCommandType.equals(SqlCommandType.SELECT)){
-            LOGGER.debug("【framework-amoeba】 执行查询操作，使用slave数据库");
+            LOGGER.debug("【FW-amoeba】 执行查询操作，使用slave数据库");
             DataSourceContextHolder.get().useDataBaseType(true,true);
         }else if(!useMaster){
-            LOGGER.debug("【framework-amoeba】 执行CUD操作，使用master数据库");
+            LOGGER.debug("【FW-amoeba】 执行CUD操作，使用master数据库");
             DataSourceContextHolder.get().useDataBaseType(false,true);
             autoFill(invocation,sqlCommandType);
         }else {

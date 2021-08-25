@@ -67,15 +67,15 @@ public class ColonyServerRealRefresh  implements ApplicationRunner {
         String groupName = colonyProperties.getGroupName();
         for (String serverName : serverNames) {
             namingService.subscribe(serverName,groupName, event -> {
-                LOGGER.info("【服务刷新】订阅的服务名称[{}]",serverName);
+                LOGGER.info("【FW-adapt】【服务刷新】订阅的服务名称[{}]",serverName);
                 if(event instanceof NamingEvent){
                     List<Instance> instances = ((NamingEvent) event).getInstances();
                     if(ObjectUtils.isNotEmpty(instances)){
                         instances.forEach(instance -> {
-                            LOGGER.info("【服务刷新】订阅的服务实例信息[{}]",instance.getInstanceId());
+                            LOGGER.info("【FW-adapt】【服务刷新】订阅的服务实例信息[{}]",instance.getInstanceId());
                         });
                     }else {
-                        LOGGER.info("【服务刷新】订阅的服务下无可用实例");
+                        LOGGER.info("【FW-adapt】【服务刷新】订阅的服务下无可用实例");
                     }
                     ServerListUpdater.UpdateAction updateAction = colonyServerListUpdate.getUpdateAction();
                     if (updateAction != null){

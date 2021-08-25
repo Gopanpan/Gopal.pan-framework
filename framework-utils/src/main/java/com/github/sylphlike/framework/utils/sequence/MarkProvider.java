@@ -45,7 +45,7 @@ public class MarkProvider {
                 }
             }
         } catch (Exception e) {
-            logger.error("【framework-utils】获取数据中心标识，系统异常",e);
+            logger.error("【FW-utils】获取数据中心标识，系统异常",e);
         }
         return id;
 

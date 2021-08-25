@@ -122,9 +122,9 @@ public class ExcelExport<T> {
         }
 
 
-        logger.info("【framework-utils】导出excel文件,初始化excel文件完成");
-        logger.info(MessageFormat.format("【framework-utils】导出的数据长度为[{0}]", exportDataSize));
-        logger.info(MessageFormat.format("【framework-utils】导出的excel sheet总页数为[{0}],单个sheet页最大行数[{1}]",sheetCount, SHEET_CAPACITY));
+        logger.info("【FW-utils】导出excel文件,初始化excel文件完成");
+        logger.info(MessageFormat.format("【FW-utils】导出的数据长度为[{0}]", exportDataSize));
+        logger.info(MessageFormat.format("【FW-utils】导出的excel sheet总页数为[{0}],单个sheet页最大行数[{1}]",sheetCount, SHEET_CAPACITY));
 
     }
 
@@ -336,7 +336,7 @@ public class ExcelExport<T> {
      */
     public ExcelExport dispose(){
         sxssfWorkbook.dispose();
-        logger.info("【framework-utils】导出excel文件,excel文件导出完成");
+        logger.info("【FW-utils】导出excel文件,excel文件导出完成");
         return this;
     }
 

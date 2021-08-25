@@ -27,7 +27,7 @@ public class EmailUtil {
 
 
     public static Boolean sendEmail(EmailBo emailBo){
-        LOGGER.info("【framework-utils】邮件发送,入参[{}] ",emailBo);
+        LOGGER.info("【FW-utils】邮件发送,入参[{}] ",emailBo);
 
         boolean sendFlag;
         Session session;
@@ -107,7 +107,7 @@ public class EmailUtil {
             sendFlag = true;
         } catch (Exception e) {
             e.printStackTrace();
-            LOGGER.error("【framework-utils】邮件发送,系统异常", e);
+            LOGGER.error("【FW-utils】邮件发送,系统异常", e);
             sendFlag = false;
         }finally {
             try {
@@ -118,7 +118,7 @@ public class EmailUtil {
             }
 
         }
-        LOGGER.info("【framework-utils】邮件发送,出参[{}] ",sendFlag);
+        LOGGER.info("【FW-utils】邮件发送,出参[{}] ",sendFlag);
 
         return sendFlag;
     }

@@ -39,7 +39,7 @@ public class GoSerializer {
             os.flush();
             byteArray = bis.toByteArray();
         } catch (IOException e) {
-            LOGGER.error("【framework-boxing】 序列化异常",e);
+            LOGGER.error("【FW-boxing】 序列化异常",e);
         } finally {
             closeOutputStream(os, bis);
         }
@@ -67,7 +67,7 @@ public class GoSerializer {
             ois = new ObjectInputStream(bos);
             obj = ois.readObject();
         } catch (Exception e) {
-            LOGGER.error("【framework-boxing】 反序列化异常",e);
+            LOGGER.error("【FW-boxing】 反序列化异常",e);
         } finally {
             closeInputStream(bos, ois);
         }
@@ -82,7 +82,7 @@ public class GoSerializer {
             try {
                 inputStream.close();
             } catch (IOException e) {
-                LOGGER.error("【framework-boxing】 关闭输入流时异常",e);
+                LOGGER.error("【FW-boxing】 关闭输入流时异常",e);
             }
         }
 
@@ -90,7 +90,7 @@ public class GoSerializer {
             try {
                 ois.close();
             } catch (IOException e) {
-                LOGGER.error("【framework-boxing】 关闭输入流时异常",e);
+                LOGGER.error("【FW-boxing】 关闭输入流时异常",e);
             }
         }
 
@@ -103,7 +103,7 @@ public class GoSerializer {
             try {
                 outputStream.close();
             } catch (IOException e) {
-                LOGGER.error("【framework-boxing】 关闭输出流时异常",e);
+                LOGGER.error("【FW-boxing】 关闭输出流时异常",e);
             }
         }
 
@@ -111,7 +111,7 @@ public class GoSerializer {
             try {
                 bis.close();
             } catch (IOException e) {
-                LOGGER.error("【framework-boxing】 关闭输出流时异常",e);
+                LOGGER.error("【FW-boxing】 关闭输出流时异常",e);
             }
         }
 

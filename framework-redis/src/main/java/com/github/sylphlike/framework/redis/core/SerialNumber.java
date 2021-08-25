@@ -143,7 +143,7 @@ public class SerialNumber {
      * @author  Gopal.pan
      */
     public boolean reloadSeq(String key){
-        LOGGER.info("【framework-redis】全局流水号,同步填充流水号,队列名称[{}]",key);
+        LOGGER.info("【FW-redis】全局流水号,同步填充流水号,队列名称[{}]",key);
         RLock lock = null;
         boolean acquireLock = false;
         try {
@@ -155,7 +155,7 @@ public class SerialNumber {
                 acquireLock = true;
             }
         }catch (Exception e){
-            LOGGER.info("【framework-redis】全局流水号,同步填充流水号,系统异常",e);
+            LOGGER.info("【FW-redis】全局流水号,同步填充流水号,系统异常",e);
         }finally {
             if(lock != null){
                 lock.unlock();

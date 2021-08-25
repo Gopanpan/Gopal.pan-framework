@@ -50,7 +50,7 @@ public class MsgEventManager  {
 
         int size = msgEventDelayQueue.size();
         if((double)size / QUEUE_CAPACITY > 0.9){
-            logger.warn("【framework-web】当前队列容量超过90%，请关注队列数据");
+            logger.warn("【FW-web】当前队列容量超过90%，请关注队列数据");
         }
         if(!msgEventDelayQueue.contains(msgEvent)){
             msgEventDelayQueue.offer(msgEvent);

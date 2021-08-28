@@ -17,8 +17,6 @@ public interface ExportStyle{
 
     /**
      * 标题样式
-     * <p>  time 11:22 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @param cellStyle  CellStyle
      * @param font       Font
      * @return  org.apache.poi.ss.usermodel.CellStyle
@@ -31,8 +29,6 @@ public interface ExportStyle{
 
     /**
      * 列表头样式
-     * <p>  time 11:22 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @param cellStyle  CellStyle
      * @param font       Font
      * @return  org.apache.poi.ss.usermodel.CellStyle
@@ -44,8 +40,6 @@ public interface ExportStyle{
 
     /**
      * 内容样式
-     * <p>  time 11:22 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @param cellStyle  CellStyle
      * @param font       Font
      * @return  org.apache.poi.ss.usermodel.CellStyle

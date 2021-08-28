@@ -52,11 +52,10 @@ public class EndpointHandler {
     private String appName;
 
 
+
     /**
      * 系统中业务接口地址列表
-     * <p>  time 15:57 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
-     * @return  com.github.sylphlike.framework.norm.Response<com.github.sylphlike.framework.web.endpoint.ApiVO>
+     * @return Response<ApiVO>
      * @author  Gopal.pan
      */
     @GetMapping(value = "/business/url",name = "业务接口地址列表")

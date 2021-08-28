@@ -29,11 +29,8 @@ public class RandomPhone {
 
     /**
      *  随机生成手机号码
-     * <p>  time 16:15 2021/7/20     </p>
-     * <p> email 15923508369@163.com </p>
      * @param op   运营商 0移动，1联通，2电信
      * @return String
-     * @throws
      * @author  Gopal.pan
      */
     public static String createMobile(int op) {

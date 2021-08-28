@@ -80,9 +80,7 @@ public class DataBasesRoutInterceptor implements Interceptor {
 
     /**
      * 自动填充操作人属性字段
-     * <p> create_user create_time update_user update_time 四个字段 </p>
-     * <p>  time 18:18 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
+     * create_user create_time update_user update_time 四个字段
      * @param invocation     调用方式
      * @param sqlCommandType 语句类型
      * @throws  IllegalArgumentException ex

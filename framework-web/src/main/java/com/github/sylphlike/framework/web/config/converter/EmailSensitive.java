@@ -2,7 +2,6 @@ package com.github.sylphlike.framework.web.config.converter;
 
 import com.fasterxml.jackson.databind.util.StdConverter;
 import com.github.sylphlike.framework.utils.general.SensitiveUtils;
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * 电子邮件脱敏转换器

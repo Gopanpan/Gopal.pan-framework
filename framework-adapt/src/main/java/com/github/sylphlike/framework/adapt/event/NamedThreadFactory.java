@@ -1,4 +1,4 @@
-package com.github.sylphlike.framework.web.utils.event;
+package com.github.sylphlike.framework.adapt.event;
 
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;

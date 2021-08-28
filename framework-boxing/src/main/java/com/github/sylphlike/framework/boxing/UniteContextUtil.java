@@ -39,8 +39,6 @@ public class UniteContextUtil implements ApplicationContextAware {
 
     /**
      * 获取对象 这里重写了bean方法，起主要作用
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param name bean名称
      * @return  java.lang.Object
      * @throws  BeansException ex
@@ -54,8 +52,6 @@ public class UniteContextUtil implements ApplicationContextAware {
 
     /**
      * 根据类型获取bean
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param clazz   class
      * @return  T
      * @author  Gopal.pan

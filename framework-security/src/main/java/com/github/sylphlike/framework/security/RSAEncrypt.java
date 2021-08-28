@@ -49,8 +49,6 @@ public class RSAEncrypt {
      * 1024位的证书，加密时最大支持117个字节，解密时为128；
      * 2048位的证书，加密时最大支持245个字节，解密时为256。
      * 加密时支持的最大字节数：证书位数/8 -11（比如：2048位的证书，支持的最大加密字节数：2048/8 - 11 = 245）
-     * <p>  time 14:06 2021/3/3       </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.util.Map<java.lang.String,java.lang.Object>
      * @author  Gopal.pan
      */
@@ -72,8 +70,6 @@ public class RSAEncrypt {
 
     /**
      * 用私钥对信息生成数字签名
-     * <p>  time 14:07 2021/3/3       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param data       已加密数据字节数组
      * @param privateKey 私钥(BASE64编码)
      * @return  java.lang.String
@@ -95,8 +91,6 @@ public class RSAEncrypt {
 
     /**
      * 校验数字签名
-     * <p>  time 14:07 2021/3/3       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param data      已加密数据
      * @param publicKey 公钥(BASE64编码)
      * @param sign      数字签名
@@ -121,8 +115,6 @@ public class RSAEncrypt {
 
     /**
      * 公钥加密
-     * <p>  time 14:19 2021/3/3       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param data      源数据
      * @param publicKey 公钥(BASE64编码)
      * @return  java.lang.String  Base64编码的字符串
@@ -138,8 +130,6 @@ public class RSAEncrypt {
 
     /**
      * 公钥加密
-     * <p>  time 14:08 2021/3/3       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param data      源数据
      * @param publicKey 公钥(BASE64编码)
      * @return  byte[]  为编码的字节数组
@@ -160,8 +150,6 @@ public class RSAEncrypt {
 
     /**
      * 私钥加密
-     * <p>  time 14:37 2021/3/3       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param data       源数据
      * @param privateKey 私钥(BASE64编码)
      * @return  java.lang.String
@@ -176,8 +164,6 @@ public class RSAEncrypt {
 
     /**
      * 私钥加密
-     * <p>  time 14:09 2021/3/3       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param data       源数据
      * @param privateKey 私钥(BASE64编码)
      * @return  byte[]
@@ -197,8 +183,6 @@ public class RSAEncrypt {
 
     /**
      * 公钥解密
-     * <p>  time 14:40 2021/3/3       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param data       已加密数据
      * @param publicKey  公钥(BASE64编码)
      * @return  java.lang.String
@@ -214,8 +198,6 @@ public class RSAEncrypt {
 
     /**
      * 公钥解密
-     * <p>  time 14:08 2021/3/3       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param encryptedData 已加密数据
      * @param publicKey     公钥(BASE64编码)
      * @return  byte[]
@@ -236,8 +218,6 @@ public class RSAEncrypt {
 
     /**
      * 私钥解密
-     * <p>  time 14:31 2021/3/3       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param data          已加密数据
      * @param privateKey    私钥(BASE64编码)
      * @return  java.lang.String
@@ -252,8 +232,6 @@ public class RSAEncrypt {
 
     /**
      * 私钥解密
-     * <p>  time 14:07 2021/3/3       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param encryptedData 已加密数据
      * @param privateKey    私钥(BASE64编码)
      * @return  byte[]

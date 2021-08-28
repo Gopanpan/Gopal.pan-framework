@@ -27,8 +27,6 @@ public class RandomUtils {
 
     /**
      * 获得指定范围内的随机数[min, max)
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param min 最小数（包含）
      * @param max 最大数（不包含）
      * @return  long
@@ -42,8 +40,6 @@ public class RandomUtils {
 
     /**
      * 获得指定范围内的随机数[min, max)
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param min 最小数（包含）
      * @param max 最大数（不包含）
      * @return  long
@@ -56,8 +52,6 @@ public class RandomUtils {
 
     /**
      * 获得一个随机的字符串
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param baseString 随机字符选取的样本
      * @param length     字符串的长度
      * @return  java.lang.String
@@ -83,8 +77,6 @@ public class RandomUtils {
 
     /**
      * 获取指定长度的随机数字
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param length 字符串的长度
      * @return  java.lang.String
      * @author  Gopal.pan
@@ -103,8 +95,6 @@ public class RandomUtils {
 
     /**
      * 获取指定长度的小写字符
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param length 字符串的长度
      * @return  java.lang.String
      * @author  Gopal.pan
@@ -122,8 +112,6 @@ public class RandomUtils {
 
     /**
      * 获取指定长度的小写字符
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param length 字符串的长度
      * @return  java.lang.String
      * @author  Gopal.pan
@@ -140,8 +128,6 @@ public class RandomUtils {
 
     /**
      * 获取指定长度的数字字母组合
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param length 字符串的长度
      * @return  java.lang.String
      * @author  Gopal.pan

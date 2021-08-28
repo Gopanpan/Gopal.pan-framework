@@ -67,8 +67,6 @@ public abstract class AbstractTransaction<T>{
 
     /**
      *  事物执行抽象类，业务接口实现具体逻辑
-     * <p>  time 15:55 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @return   com.github.sylphlike.norm.Response
      * @author   Gopal.pan
      */

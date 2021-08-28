@@ -21,8 +21,6 @@ public class UUIDRandom {
 
     /**
      * 十位随机不重复数字序列，不到十位的前面补0
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.lang.String
      * @author  Gopal.pan
      */
@@ -39,8 +37,6 @@ public class UUIDRandom {
     /**
      * 8位不重复ID
      * <p> 通过随机生成32位UUID，由于UUID都为十六进制，所以将UUID分成8组，每4个为一组，然后通过模62操作，结果作为索引取出字符 </p>
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.lang.String
      * @author  Gopal.pan
      */

@@ -19,8 +19,6 @@ public class Md5Utils {
 
     /**
      * md5算法进行加密
-     * <p>  time 18:27 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param plainText  明文
      * @return  java.lang.String
      * @author  Gopal.pan

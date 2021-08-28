@@ -34,8 +34,6 @@ public class LocalCache {
 
     /**
      * 将key-value 保存到本地缓存并制定该缓存的过期时间
-     * <p>  time 18:20 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param key         key
      * @param value       值
      * @param expireTime  过期时间，如果是-1 则表示永不过期  单位毫秒
@@ -50,8 +48,6 @@ public class LocalCache {
 
     /**
      * 将值通过序列化clone 处理后保存到缓存中，可以解决值引用的问题
-     * <p>  time 18:21 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param key         key
      * @param value       值
      * @param expireTime  过期时间，如果是-1 则表示永不过期  单位毫秒
@@ -78,8 +74,6 @@ public class LocalCache {
 
     /**
      * 从本地缓存中获取key对应的值，如果该值不存则则返回null
-     * <p>  time 18:21 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param key  key
      * @return  java.lang.Object
      * @author  Gopal.pan
@@ -122,8 +116,6 @@ public class LocalCache {
 
     /**
      * 缓存过期处理
-     * <p>  time 18:22 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @author  Gopal.pan
      */
     static class TimeoutTimerThread implements Runnable {

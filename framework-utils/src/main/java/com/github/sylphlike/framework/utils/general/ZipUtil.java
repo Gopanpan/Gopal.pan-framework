@@ -22,8 +22,6 @@ public class ZipUtil {
 
     /**
      * 压缩指定目录下的文件
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param originDir   需要压缩的文件ja
      * @param zipFile     压缩后的文件
      * @return  boolean
@@ -63,8 +61,6 @@ public class ZipUtil {
 
     /**
      * 压缩成ZIP 方法1
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param srcDir 压缩文件夹路径
      * @param out    压缩文件输出流
      * @param KeepDirStructure  是否保留原来的目录结构,true:保留目录结构; false:所有文件跑到压缩包根目录下(注意：不保留目录结构可能会出现同名文件,会压缩失败)
@@ -102,8 +98,6 @@ public class ZipUtil {
 
     /**
      * 压缩成ZIP 方法2
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param srcFiles 需要压缩的文件列表
      * @param out 	        压缩文件输出流
      * @throws  RuntimeException ex
@@ -141,11 +135,9 @@ public class ZipUtil {
 
     /**
      * 压缩3
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param sourceFile 源文件
-     * @param zos		 zip输出流
-     * @param name		 压缩后的名称
+     * @param zos   zip输出流
+     * @param name  压缩后的名称
      * @param KeepDirStructure  是否保留原来的目录结构,true:保留目录结构; false:所有文件跑到压缩包根目录下(注意：不保留目录结构可能会出现同名文件,会压缩失败)
      * @throws  Exception ex
      * @author  Gopal.pan
@@ -197,8 +189,6 @@ public class ZipUtil {
 
     /**
      * 判断压缩文件保存的路径是否为源文件路径的子文件夹，如果是，则抛出异常（防止无限递归压缩的发生）
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param zipFile  压缩后的产生的文件路径
      * @param originFile 被压缩的文件或目录
      * @throws  UtilException ex

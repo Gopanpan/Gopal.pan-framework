@@ -80,8 +80,6 @@ public class StandardSequence {
 
     /**
      * 获取下一个ID
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  long
      * @author  Gopal.pan
      */

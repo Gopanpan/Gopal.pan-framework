@@ -17,7 +17,7 @@ public class StrValidator {
 
     /**
      * 验证是否为生日
-     * <p> 只支持以下几种格式： yyyyMMdd yyyy-MM-dd yyyy/MM/dd yyyy.MM.dd yyyy年MM月dd日
+     * 只支持以下几种格式： yyyyMMdd yyyy-MM-dd yyyy/MM/dd yyyy.MM.dd yyyy年MM月dd日
      * @param value 值
      * @return 是否为生日
      */

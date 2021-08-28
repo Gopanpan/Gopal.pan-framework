@@ -31,8 +31,6 @@ public interface GluedClient {
 
     /**
      * 请求用户授权Token
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.lang.String
      * @author  Gopal.pan
      */
@@ -41,8 +39,6 @@ public interface GluedClient {
 
     /**
      * 获取授权过的Access Token
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @return   com.github.sylphlike.framework.glued.domain.AuthToken
      * @author   Gopal.pan
      */
@@ -52,8 +48,6 @@ public interface GluedClient {
 
     /**
      * 用户信息
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  com.github.sylphlike.framework.glued.domain.out.UserInfo
      * @author  Gopal.pan
      */

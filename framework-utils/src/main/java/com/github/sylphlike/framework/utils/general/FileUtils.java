@@ -28,8 +28,6 @@ public class FileUtils {
 
     /**
      * 判断指定文件夹是否存在，不存在是创建文件夹
-     * <p>  time 15:06 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param dirPath  目录地址
      * @author  Gopal.pan
      */
@@ -42,8 +40,6 @@ public class FileUtils {
 
     /**
      * InputStream 转file
-     * <p>  time 15:06 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param ins  输入流
      * @param file 文件
      * @throws  Exception ex
@@ -67,8 +63,6 @@ public class FileUtils {
 
     /**
      * 文件转字节数组
-     * <p>  time 15:06 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param file    文件
      * @return  byte[]
      * @author  Gopal.pan
@@ -93,8 +87,6 @@ public class FileUtils {
 
     /**
      * 根据byte[] 数组生成文件
-     * <p>  time 15:06 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param bfile  字节数组
      * @param filePath 文件路径
      * @param fileName 文件名
@@ -136,8 +128,6 @@ public class FileUtils {
 
     /**
      * 图片转byte数组
-     * <p>  time 15:06 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param path      图片地址
      * @return  byte[]
      * @author  Gopal.pan
@@ -161,8 +151,6 @@ public class FileUtils {
 
     /**
      * byte数组转图片
-     * <p>  time 15:06 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param data  数组
      * @param path   生成图片保存地址目录
      * @author  Gopal.pan
@@ -179,8 +167,6 @@ public class FileUtils {
 
     /**
      * 删除单个文件
-     * <p>  time 15:06 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param fileName   要删除的文件的文件名
      * @return  boolean  单个文件删除成功返回true，否则返回false
      * @author  Gopal.pan
@@ -202,8 +188,6 @@ public class FileUtils {
 
     /**
      * 删除文件或文件夹
-     * <p>  time 15:06 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param fileDir 文件地址
      * @author  Gopal.pan
      */
@@ -240,8 +224,6 @@ public class FileUtils {
     /**
      * 创建File对象
      * <p> 此方法会检查slip漏洞，漏洞说明见http://blog.nsfocus.net/zip-slip-2/
-     * <p>  time 15:06 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param parent 父文件对象
      * @param path   文件路径
      * @return  java.io.File
@@ -298,9 +280,7 @@ public class FileUtils {
 
     /**
      * 检查父完整路径是否为自路径的前半部分，如果不是说明不是子路径，可能存在slip注入。
-     * <p> 见http://blog.nsfocus.net/zip-slip-2/
-     * <p>  time 15:06 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
+     * 见http://blog.nsfocus.net/zip-slip-2/
      * @param parentFile 父文件或目录
      * @param file       子文件或目录
      * @return  java.io.File  子文件或目录
@@ -326,8 +306,6 @@ public class FileUtils {
 
     /**
      * 获得一个输出流对象
-     * <p>  time 15:06 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param file  文件
      * @return  java.io.BufferedOutputStream
      * @author  Gopal.pan
@@ -344,9 +322,7 @@ public class FileUtils {
 
     /**
      * 创建文件及其父目录，如果这个文件存在，直接返回这个文件
-     * <p> 此方法不对File对象类型做判断，如果File不存在，无法判断其类型 </p>
-     * <p>  time 15:06 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
+     *  此方法不对File对象类型做判断，如果File不存在，无法判断其类型
      * @param file 文件对象
      * @return  java.io.File 文件，若路径为null，返回null
      * @author  Gopal.pan

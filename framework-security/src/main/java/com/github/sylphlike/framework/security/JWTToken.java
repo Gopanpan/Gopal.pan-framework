@@ -26,8 +26,6 @@ public class JWTToken {
 
     /**
      * 签发JWT 默认token失效时间为30分钟
-     * <p>  time 16:37 2021/4/21      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param subject  内容
      * @return  java.lang.String
      * @author  Gopal.pan
@@ -42,8 +40,6 @@ public class JWTToken {
 
     /**
      * 签发指定过期时间的token
-     * <p>  time 16:37 2021/4/21      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param subject   内容
      * @param expires   过期时间
      * @param timeUnit  时间单位
@@ -72,8 +68,6 @@ public class JWTToken {
 
     /**
      * 验证token
-     * <p>  time 16:38 2021/4/21      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param jwtStr  待验证token
      * @return  boolean
      * @author  Gopal.pan
@@ -91,8 +85,6 @@ public class JWTToken {
 
     /**
      * 验证token
-     * <p>  time 16:38 2021/4/21      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param jwtStr  待验证token
      * @return  java.lang.String
      * @author  Gopal.pan

@@ -16,8 +16,6 @@ public interface AuthSource {
 
     /**
      * 实例化对应平台的运行实例
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param clientConfig ClientConfig
      * @return  com.github.sylphlike.framework.glued.api.GluedClient
      * @author  Gopal.pan
@@ -29,8 +27,6 @@ public interface AuthSource {
 
     /**
      * 授权api地址
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.lang.String
      * @author  Gopal.pan
      */
@@ -39,8 +35,6 @@ public interface AuthSource {
 
     /**
      * 获取accessToken的api
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.lang.String
      * @author  Gopal.pan
      */
@@ -50,8 +44,6 @@ public interface AuthSource {
 
     /**
      * 获取用户信息
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.lang.String
      * @author  Gopal.pan
      */
@@ -60,8 +52,6 @@ public interface AuthSource {
 
     /**
      * 取消授权
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.lang.String
      * @author  Gopal.pan
      */
@@ -72,8 +62,6 @@ public interface AuthSource {
 
     /**
      *  刷新授权
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.lang.String
      * @author  Gopal.pan
      */

@@ -1,6 +1,6 @@
-package com.github.sylphlike.framework.web.utils.event;
+package com.github.sylphlike.framework.adapt.event;
 
-import com.github.sylphlike.framework.web.utils.SpringContextUtil;
+import com.github.sylphlike.framework.adapt.SpringContextUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;

@@ -37,15 +37,13 @@ public class SensitiveConverter extends ClassicConverter {
 
     /**
      * 身份证号 前4后4，其他隐藏
-     * <p>  time 15:57 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param content  原始带脱敏字符串
      * @return  java.lang.String
      * @author  Gopal.pan
      */
     private static String idCard(String content){
         Matcher matcher = PatternPool.CITIZEN_ID_18.matcher(content);
-        StringBuffer stringBuffer = new StringBuffer() ;
+        StringBuilder stringBuffer = new StringBuilder() ;
         while(matcher.find()){
             matcher.appendReplacement(stringBuffer, desensitization(matcher.group(), 4, 4));
         }
@@ -57,8 +55,6 @@ public class SensitiveConverter extends ClassicConverter {
 
     /**
      * 手机号码 前三位，后四位，其他隐藏 138******1234
-     * <p>  time 15:57 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param content 原始带脱敏字符串
      * @return java.lang.String
      * @author Gopal.pan
@@ -76,15 +72,13 @@ public class SensitiveConverter extends ClassicConverter {
 
     /**
      * 银行卡号 前三位，后四位，其他隐藏 622******3499
-     * <p>  time 15:57 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param content 原始带脱敏字符串
      * @return java.lang.String
      * @author Gopal.pan
      */
     private static String bankCard(String content){
         Matcher matcher = PatternPool.BANK_CARD.matcher(content);
-        StringBuffer sb = new StringBuffer() ;
+        StringBuilder sb = new StringBuilder() ;
         while(matcher.find()){
             matcher.appendReplacement(sb, desensitization(matcher.group(), 3, 4)) ;
         }
@@ -97,15 +91,13 @@ public class SensitiveConverter extends ClassicConverter {
 
     /**
      * 邮箱地址 前3，其他隐藏 。
-     * <p>  time 15:57 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param content 原始带脱敏字符串
      * @return java.lang.String
      * @author Gopal.pan
      */
     private String email(String content) {
         Matcher matcher = PatternPool.EMAIL.matcher(content);
-        StringBuffer sb = new StringBuffer() ;
+        StringBuilder sb = new StringBuilder() ;
         while(matcher.find()){
             String group = matcher.group();
             int i = group.lastIndexOf("@");
@@ -120,8 +112,6 @@ public class SensitiveConverter extends ClassicConverter {
 
     /**
      *  基础脱敏处理 指定起止展示长度 剩余用"*"中字符替换
-     * <p>  time 15:57 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param str               待脱敏的字符串
      * @param startLength       开始展示长度
      * @param endLength         末尾展示长度

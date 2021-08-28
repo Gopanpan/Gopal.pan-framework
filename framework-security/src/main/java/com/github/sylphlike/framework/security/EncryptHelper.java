@@ -29,9 +29,6 @@ public class EncryptHelper {
 
     /**
      * 参数字典顺序排序
-     *
-     * <p>  time 16:16 2021/6/23     </p>
-     * <p> email 15923508369@163.com </p>
      * @param params       待排序的参数集合
      * @param filterParams 需要过滤的参数
      * @return String  排序后并按照url请求参数格式的字符串参数
@@ -62,8 +59,6 @@ public class EncryptHelper {
 
     /**
      * 6位随机数
-     * <p>  time 16:39 2021/4/21      </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.lang.String
      * @author  Gopal.pan
      */

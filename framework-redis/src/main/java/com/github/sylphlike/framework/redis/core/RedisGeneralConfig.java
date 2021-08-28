@@ -31,8 +31,6 @@ public class RedisGeneralConfig  {
 
     /**
      * 配置Redis序列化，value使用 Jackson 可以使用 StringRedisSerializer
-     * <p>  time 17:06 2021/6/21     </p>
-     * <p> email 15923508369@163.com </p>
      * @param redissonConnectionFactory redissonConnectionFactory
      * @return RedisTemplate<Serializable,Object>
      * @author  Gopal.pan

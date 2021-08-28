@@ -72,8 +72,6 @@ public class ConcurrentThreadPool {
 
     /**
      * 提交单个任务
-     * <p>  time 16:00 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param task  可执行类
      * @return  V
      * @throws  ExecutionException  ex
@@ -90,8 +88,6 @@ public class ConcurrentThreadPool {
 
     /**
      * 批量提交多个任务
-     * <p>  time 16:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param tasks   可执行类
      * @return  java.util.List<V>
      * @throws  ExecutionException  ex

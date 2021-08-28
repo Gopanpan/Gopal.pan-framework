@@ -1,4 +1,4 @@
-package com.github.sylphlike.framework.web.utils;
+package com.github.sylphlike.framework.adapt;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -41,8 +41,6 @@ public class SpringContextUtil implements ApplicationContextAware {
 
     /**
      * 根据名称获取对象
-     * <p>  time 17:18 2021/1/6 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @param name   bean名称
      * @return  java.lang.Object
      * @throws  BeansException ex
@@ -57,8 +55,6 @@ public class SpringContextUtil implements ApplicationContextAware {
 
     /**
      * 根据类型获取bean
-     * <p>  time 17:18 2021/1/6 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @param clazz  class
      * @return  T    类实例
      * @author  Gopal.pan
@@ -75,8 +71,6 @@ public class SpringContextUtil implements ApplicationContextAware {
 
     /**
      * 根据类型获取该实例下的所有子类
-     * <p>  time 17:20 2021/1/6 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @param clazz  类实例
      * @return  java.util.Map
      * @author  Gopal.pan
@@ -87,4 +81,13 @@ public class SpringContextUtil implements ApplicationContextAware {
 
 
 
+
+    /**
+     * 获取当前环境
+     * @return String
+     * @author  Gopal.pan
+     */
+    public static String getActiveProfile() {
+        return applicationContext.getEnvironment().getActiveProfiles()[0];
+    }
 }

@@ -100,8 +100,6 @@ public class WebAspect {
 
     /**
      * 移除当前请求用户上下文，不处理异常， 异常由通用异常处理
-     * <p>  time 15:55 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @author  Gopal.pan
      */
     @AfterThrowing(throwing = "throwable", pointcut = "webPointcut()")

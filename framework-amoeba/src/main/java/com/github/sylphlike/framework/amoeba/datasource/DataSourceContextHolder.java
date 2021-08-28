@@ -41,8 +41,6 @@ public class DataSourceContextHolder {
 
     /**
      * 设置是否使用从库
-     * <p>  time 18:18 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param useSlave             是否使用从库
      * @param routedBeforeGetConn  是否在获取链接前设置
      * @return  com.github.sylphlike.framework.amoeba.datasource.DataSourceContextHolder
@@ -62,8 +60,6 @@ public class DataSourceContextHolder {
 
     /**
      * 根据 ThreadLocal 上下文获取本次线程执行的数据库连接key
-     * <p>  time 18:19 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.lang.String
      * @author  Gopal.pan
      */

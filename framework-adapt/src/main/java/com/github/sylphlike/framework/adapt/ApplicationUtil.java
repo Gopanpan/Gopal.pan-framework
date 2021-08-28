@@ -1,6 +1,5 @@
-package com.github.sylphlike.framework.web.utils;
+package com.github.sylphlike.framework.adapt;
 
-import com.github.sylphlike.framework.utils.general.OSUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.system.ApplicationHome;
@@ -8,6 +7,7 @@ import org.springframework.boot.system.ApplicationHome;
 import java.io.*;
 import java.util.Enumeration;
 import java.util.Objects;
+import java.util.Properties;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
@@ -69,7 +69,9 @@ public class ApplicationUtil {
             }else {
                 // windows  D:\ideaWorkspace\Gopal.pan-private\Gopal.pan-schedule\Gopal.pan-schedule-client\target\classes
                 // MAC      Users/horse/IdeaProjects/Gopal.pan-private/micro-api-auth/framework-utils-feign/target/classes
-                String osName = Objects.requireNonNull(OSUtils.systemConfig()).get("osName");
+
+                Properties props = System.getProperties();
+                String osName = Objects.requireNonNull(props.getProperty("os.name"));
                 String fullProjectPath;
                 if(osName.startsWith("Windows")){
                     fullProjectPath = absolutePath.substring(0, absolutePath.lastIndexOf("\\target\\classes"));

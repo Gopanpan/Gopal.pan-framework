@@ -18,8 +18,6 @@ public @interface ExcelModel {
 
     /**
      * 标题信息
-     * <p>  time 11:30 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @return  java.lang.String
      * @author  Gopal.pan
      */
@@ -28,8 +26,6 @@ public @interface ExcelModel {
 
     /**
      * 导出文件样式
-     * <p>  time 11:30 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @return  java.lang.Class
      * @author  Gopal.pan
      */
@@ -39,8 +35,6 @@ public @interface ExcelModel {
 
     /**
      * 标题行高
-     * <p>  time 11:30 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @return  short
      */
     short  titleHeight() default 520;
@@ -50,8 +44,6 @@ public @interface ExcelModel {
 
     /**
      * 表头行高
-     * <p>  time 11:30 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @return  short
      * @author  Gopal.pan
      */
@@ -60,8 +52,6 @@ public @interface ExcelModel {
 
     /**
      * 内容行高
-     * <p>  time 11:30 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @return  short
      * @author  Gopal.pan
      */
@@ -71,9 +61,7 @@ public @interface ExcelModel {
 
     /**
      * sheet名称
-     * <p>如果有多个sheet页那么sheet名称格式为 sheetName_index,index以0 开始
-     * <p>  time 11:29 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
+     * 如果有多个sheet页那么sheet名称格式为 sheetName_index,index以0 开始
      * @return  java.lang.String
      * @author  Gopal.pan
      */

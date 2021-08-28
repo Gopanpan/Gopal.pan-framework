@@ -23,8 +23,6 @@ public class BoValidator {
 
     /**
      * 校验实体
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param obj      需要校验的实体对象
      * @return  java.lang.String
      * @author  Gopal.pan
@@ -45,8 +43,6 @@ public class BoValidator {
 
     /**
      * 校验实体中指定的字段
-     * <p>  time 15:11 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param obj           实体对象
      * @param propertyName  需要校验的字段
      * @return  java.lang.String

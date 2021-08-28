@@ -13,8 +13,6 @@ public abstract class AbstractException<T> {
 
     /**
      * 事物执行抽象类
-     * <p>  time 15:55 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  com.github.sylphlike.framework.norm.Response<T>
      * @throws  Exception ex
      * @author  Gopal.pan

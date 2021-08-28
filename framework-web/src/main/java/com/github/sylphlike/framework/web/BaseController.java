@@ -52,9 +52,7 @@ public class BaseController {
 
     /**
      * 初始化请求对象，
-     * <p> 同步方法，保证多线程情况下线程安全
-     * <p>  time 16:39 2021/1/11 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
+     *  同步方法，保证多线程情况下线程安全
      * @param request   request
      * @param response  response
      * @author  Gopal.pan
@@ -117,8 +115,6 @@ public class BaseController {
 
     /**
      * 包装controller层异常处理,业务controller层无需捕获处理异常
-     * <p>  time 16:10 2020/9/21 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @param LogDesc  业务功能描述
      * @return com.github.sylphlike.norm.Response
      * @author Gopal.pan

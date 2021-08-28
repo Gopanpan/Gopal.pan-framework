@@ -21,9 +21,7 @@ public abstract class AssertUtils {
     /**
      * Assert a boolean expression, throwing an {@code IllegalStateException}
      * if the expression evaluates to {@code false}.
-     * <p>Call {@link #isTrue} if you wish to throw an {@code IllegalArgumentException}
      * on an assertion failure.
-     * <pre class="code">Assert.state(id == null, "The id property must not already be initialized");</pre>
      * @param expression a boolean expression
      * @param message the exception message to use if the assertion fails
      * @throws IllegalStateException if {@code expression} is {@code false}
@@ -41,7 +39,6 @@ public abstract class AssertUtils {
     /**
      * Assert a boolean expression, throwing an {@code IllegalArgumentException}
      * if the expression evaluates to {@code false}.
-     * <pre class="code">Assert.isTrue(i &gt; 0, "The value must be greater than zero");</pre>
      * @param expression a boolean expression
      * @param message the exception message to use if the assertion fails
      * @throws ServiceException if {@code expression} is {@code false}
@@ -57,7 +54,6 @@ public abstract class AssertUtils {
 
     /**
      * Assert that an object is {@code null}.
-     * <pre class="code">Assert.isNull(value, "The value must be null");</pre>
      * @param object the object to check
      * @param message the exception message to use if the assertion fails
      * @ if the object is not {@code null}
@@ -73,7 +69,6 @@ public abstract class AssertUtils {
 
     /**
      * Assert that an object is not {@code null}.
-     * <pre class="code">Assert.notNull(clazz, "The class must not be null");</pre>
      * @param object the object to check
      * @param message the exception message to use if the assertion fails
      * @throws ServiceException if the object is {@code null}
@@ -88,7 +83,6 @@ public abstract class AssertUtils {
     /**
      * Assert that the given String is not empty; that is,
      * it must not be {@code null} and not the empty String.
-     * <pre class="code">Assert.hasLength(name, "Name must not be empty");</pre>
      * @param text the String to check
      * @param message the exception message to use if the assertion fails
      * @throws ServiceException if the text is empty
@@ -106,7 +100,6 @@ public abstract class AssertUtils {
     /**
      * Assert that the given String contains valid text content; that is, it must not
      * be {@code null} and must contain at least one non-whitespace character.
-     * <pre class="code">Assert.hasText(name, "'name' must not be empty");</pre>
      * @param text the String to check
      * @param message the exception message to use if the assertion fails
      * @throws ServiceException if the text does not contain valid text content
@@ -124,7 +117,6 @@ public abstract class AssertUtils {
 
     /**
      * Assert that the given text does not contain the given substring.
-     * <pre class="code">Assert.doesNotContain(name, "rod", "Name must not contain 'rod'");</pre>
      * @param textToSearch the text to search
      * @param substring the substring to find within the text
      * @param message the exception message to use if the assertion fails
@@ -143,7 +135,6 @@ public abstract class AssertUtils {
     /**
      * Assert that an array contains elements; that is, it must not be
      * {@code null} and must contain at least one element.
-     * <pre class="code">Assert.notEmpty(array, "The array must contain elements");</pre>
      * @param array the array to check
      * @param message the exception message to use if the assertion fails
      * @throws ServiceException if the object array is {@code null} or contains no elements
@@ -160,8 +151,6 @@ public abstract class AssertUtils {
 
     /**
      * Assert that an array contains no {@code null} elements.
-     * <p>Note: Does not complain if the array is empty!
-     * <pre class="code">Assert.noNullElements(array, "The array must contain non-null elements");</pre>
      * @param array the array to check
      * @param message the exception message to use if the assertion fails
      * @throws ServiceException if the object array contains a {@code null} element
@@ -182,7 +171,6 @@ public abstract class AssertUtils {
     /**
      * Assert that a collection contains elements; that is, it must not be
      * {@code null} and must contain at least one element.
-     * <pre class="code">Assert.notEmpty(collection, "Collection must contain elements");</pre>
      * @param collection the collection to check
      * @param message the exception message to use if the assertion fails
      * @throws ServiceException if the collection is {@code null} or
@@ -197,8 +185,6 @@ public abstract class AssertUtils {
 
     /**
      * Assert that a collection contains no {@code null} elements.
-     * <p>Note: Does not complain if the collection is empty!
-     * <pre class="code">Assert.noNullElements(collection, "Collection must contain non-null elements");</pre>
      * @param collection the collection to check
      * @param message the exception message to use if the assertion fails
      * @throws ServiceException if the collection contains a {@code null} element
@@ -219,7 +205,6 @@ public abstract class AssertUtils {
     /**
      * Assert that a Map contains entries; that is, it must not be {@code null}
      * and must contain at least one entry.
-     * <pre class="code">Assert.notEmpty(map, "Map must contain entries");</pre>
      * @param map the map to check
      * @param message the exception message to use if the assertion fails
      * @throws ServiceException if the map is {@code null} or contains no entries

@@ -51,8 +51,6 @@ public class QiniuUtils  {
     
     /**
      * 字节文件上传
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param fileName   存储到服务上的全文件名
      * @param uploadByte 文件字节数组
      * @return  boolean
@@ -75,8 +73,6 @@ public class QiniuUtils  {
     
     /**
      * 获取私有下载地址
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param fileFullName  文件全限定名称
      * @return  java.lang.String
      * @author  Gopal.pan
@@ -95,8 +91,6 @@ public class QiniuUtils  {
     
     /**
      * 文件下载
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param url     文件地址
      * @param interimPath 保存目录
      * @return  boolean
@@ -142,8 +136,6 @@ public class QiniuUtils  {
 
     /**
      * 删除文件
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param fileName 文件名称
      * @return  boolean
      * @author  Gopal.pan
@@ -167,8 +159,6 @@ public class QiniuUtils  {
     
     /**
      * 重命名
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param oldFileName  原文件名
      * @param newFileName  新文件名
      * @return  boolean
@@ -199,8 +189,6 @@ public class QiniuUtils  {
 
     /**
      * 获取七牛云上传token
-     * <p>  time 18:24 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.lang.String
      * @author  Gopal.pan
      */

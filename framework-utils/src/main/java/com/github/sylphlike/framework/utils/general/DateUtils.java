@@ -24,8 +24,6 @@ public class DateUtils {
 
     /**
      * 时间转字符串形式,缺省格式为：yyyy-MM-dd HH:mm:ss
-     * <p>  time 15:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.lang.String
      * @author  Gopal.pan
      */
@@ -37,8 +35,6 @@ public class DateUtils {
 
     /**
      * 时间转字符串形式,缺省格式为：yyyy-MM-dd HH:mm:ss
-     * <p>  time 15:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param date     java LocalDateTime
      * @param patterns 格式
      * @return  java.lang.String
@@ -62,8 +58,6 @@ public class DateUtils {
 
     /**
      * 字符串转 LocalDateTime
-     * <p>  time 15:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param date      时间字符串
      * @param patterns  时间字符串格式
      * @return  java.time.LocalDateTime
@@ -80,8 +74,6 @@ public class DateUtils {
 
     /**
      * 字符串转 LocalDateTime
-     * <p>  time 15:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param date      时间字符串
      * @param patterns  时间字符串格式
      * @return  java.time.LocalDate
@@ -98,8 +90,6 @@ public class DateUtils {
 
     /**
      * 获取当前时间的指定字符串格式,缺省格式为：yyyy-MM-dd HH:mm:ss
-     * <p>  time 15:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param patterns  时间格式
      * @return  java.lang.String
      * @author  Gopal.pan
@@ -118,8 +108,6 @@ public class DateUtils {
 
     /**
      * 前时间加上或减去自定义天数
-     * <p>  time 15:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param days  加减天数
      * @return  java.time.LocalDateTime
      * @author  Gopal.pan
@@ -133,8 +121,6 @@ public class DateUtils {
 
     /**
      * 当前时间所在月份的第一天
-     * <p>  time 15:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.time.LocalDateTime
      * @author  Gopal.pan
      */
@@ -146,8 +132,6 @@ public class DateUtils {
 
     /**
      * 当前时间所在月份的最后一天
-     * <p>  time 15:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  java.time.LocalDateTime
      * @author  Gopal.pan
      */
@@ -159,8 +143,6 @@ public class DateUtils {
 
     /**
      * 获取今天是星期几
-     * <p>  time 15:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  int
      * @author  Gopal.pan
      */
@@ -173,8 +155,6 @@ public class DateUtils {
 
     /**
      * 对比两个时间差
-     * <p>  time 15:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param contrast          对比时间
      * @param byContrast        被对比时间
      * @param dateEnums         对比类型（毫秒、秒、分、时、天）
@@ -220,8 +200,6 @@ public class DateUtils {
 
     /**
      * 对比年
-     * <p>  time 15:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param datumTime         比数
      * @param compareTime       对比日期
      * @param compareMinutiae   是否比较日
@@ -249,8 +227,6 @@ public class DateUtils {
 
     /**
      * 当前时间年份
-     * <p>  time 15:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @return  int
      * @author  Gopal.pan
      */
@@ -261,8 +237,6 @@ public class DateUtils {
 
     /**
      * 是否闰年
-     * <p>  time 15:02 2021/2/1       </p>
-     * <p> email 15923508369@163.com  </p>
      * @param year  当前年
      * @return  boolean
      * @author  Gopal.pan

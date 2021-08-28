@@ -20,8 +20,6 @@ public @interface ExcelModelProperty {
 
     /**
      * excel文件的标题列文字
-     * <p>  time 11:23 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @return  java.lang.String
      * @author  Gopal.pan
      */
@@ -31,9 +29,7 @@ public @interface ExcelModelProperty {
 
     /**
      * 单元格宽度 可以为每一列设置不同宽度，也可以设置成相同宽度
-     * <p>设置成相同宽度时该注解只用设置一个值，设置不同宽度时应为每一列设置值
-     * <p>  time 11:24 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
+     * 设置成相同宽度时该注解只用设置一个值，设置不同宽度时应为每一列设置值
      * @return  int
      * @author  Gopal.pan
      */
@@ -41,8 +37,6 @@ public @interface ExcelModelProperty {
 
     /**
      * 时间类型格式化
-     * <p>  time 11:24 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @return  java.lang.String
      * @author  Gopal.pan
      */
@@ -53,8 +47,6 @@ public @interface ExcelModelProperty {
 
     /**
      * 枚举类型格式化
-     * <p>  time 11:24 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @return  java.lang.Class
      * @author  Gopal.pan
      */
@@ -63,8 +55,6 @@ public @interface ExcelModelProperty {
 
     /**
      * 枚举类型格式化对应的属性值
-     * <p>  time 11:25 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @return  java.lang.String[]
      * @author  Gopal.pan
      */
@@ -74,8 +64,6 @@ public @interface ExcelModelProperty {
 
     /**
      * 枚举类型字段是否转换对应说明
-     * <p>  time 11:25 2021/1/5 (HH:mm yyyy/MM/dd)
-     * <p> email 15923508369@163.com
      * @return  boolean
      * @author  Gopal.pan
      */

@@ -168,8 +168,6 @@ public class CustomizersConfiguration extends Configuration implements Environme
 
     /**
      * 从jar文件中读取指定目录下面的所有的class文件
-     * <p>  time 18:20 2021/1/29      </p>
-     * <p> email 15923508369@163.com  </p>
      * @param jarPath  jar文件存放的位置
      * @param filePath 指定的文件目录
      * @return  java.util.List<java.lang.Class<?>>

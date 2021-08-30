@@ -35,6 +35,9 @@ public interface Constants {
     String USER_CONTEXT = "USER_CONTEXT";
 
 
+    String TRACE_MDC_KEY = "trace";
+
+
 
 
 

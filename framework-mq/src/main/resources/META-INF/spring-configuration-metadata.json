@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "sylphlike.framework.mq",
+      "type": "com.github.sylphlike.framework.mq.core.MQProperties",
+      "sourceType": "com.github.sylphlike.framework.mq.core.MQProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "sylphlike.framework.mq.access-key",
+      "type": "java.lang.String",
+      "description": "AccessKey 阿里云身份验证，在阿里云服务器管理控制台创建",
+      "sourceType": "com.github.sylphlike.framework.mq.core.MQProperties"
+    },
+    {
+      "name": "sylphlike.framework.mq.group-id-prefix",
+      "type": "java.lang.String",
+      "description": "应用分组前缀",
+      "sourceType": "com.github.sylphlike.framework.mq.core.MQProperties"
+    },
+    {
+      "name": "sylphlike.framework.mq.reflection-package",
+      "type": "java.lang.String",
+      "description": "消费端实例包路径 XX.XXX.XXX",
+      "sourceType": "com.github.sylphlike.framework.mq.core.MQProperties"
+    },
+    {
+      "name": "sylphlike.framework.mq.secret-key",
+      "type": "java.lang.String",
+      "description": "SecretKey 阿里云身份验证，在阿里云服务器管理控制台创建",
+      "sourceType": "com.github.sylphlike.framework.mq.core.MQProperties"
+    },
+    {
+      "name": "sylphlike.framework.mq.server-url",
+      "type": "java.lang.String",
+      "description": "设置 TCP 接入域名",
+      "sourceType": "com.github.sylphlike.framework.mq.core.MQProperties"
+    }
+  ],
+  "hints": []
+}

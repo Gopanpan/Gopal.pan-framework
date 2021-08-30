@@ -207,10 +207,11 @@
         <module>framework-utils</module>
         <module>framework-web</module>
         <module>framework-glued</module>
-        <module>framework-boxing</module>
         <module>framework-adapt</module>
         <module>framework-notice</module>
         <module>framework-storage</module>
+        <module>framework-mq</module>
+        <module>framework-file</module>
     </modules>
 
     <properties>

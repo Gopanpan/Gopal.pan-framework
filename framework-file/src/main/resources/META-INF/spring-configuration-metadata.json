@@ -1,0 +1,47 @@
+{
+  "groups": [
+    {
+      "name": "sylphlike.framework.qiniu",
+      "type": "com.github.sylphlike.framework.file.qiniu.QiniuConfig",
+      "sourceType": "com.github.sylphlike.framework.file.qiniu.QiniuConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "sylphlike.framework.qiniu.access-key",
+      "type": "java.lang.String",
+      "sourceType": "com.github.sylphlike.framework.file.qiniu.QiniuConfig"
+    },
+    {
+      "name": "sylphlike.framework.qiniu.bucket",
+      "type": "java.lang.String",
+      "description": "空间名称",
+      "sourceType": "com.github.sylphlike.framework.file.qiniu.QiniuConfig"
+    },
+    {
+      "name": "sylphlike.framework.qiniu.domain",
+      "type": "java.lang.String",
+      "description": "域名",
+      "sourceType": "com.github.sylphlike.framework.file.qiniu.QiniuConfig"
+    },
+    {
+      "name": "sylphlike.framework.qiniu.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否启用",
+      "sourceType": "com.github.sylphlike.framework.file.qiniu.QiniuConfig",
+      "defaultValue": false
+    },
+    {
+      "name": "sylphlike.framework.qiniu.local-temp",
+      "type": "java.lang.String",
+      "description": "本地临时根目录",
+      "sourceType": "com.github.sylphlike.framework.file.qiniu.QiniuConfig"
+    },
+    {
+      "name": "sylphlike.framework.qiniu.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.github.sylphlike.framework.file.qiniu.QiniuConfig"
+    }
+  ],
+  "hints": []
+}

@@ -517,6 +517,14 @@
     </repositories>
 
     <profiles>
+
+
+        <!--
+            应用系统需启用环境变量
+            spring:
+              profiles:
+                active: @activatedProperties@  #开发环境(DEV)   测试环境(FAT)  用户验收(UAT) 生产环境(PRO)
+        -->
         <!-- Development environment -->
         <profile>
             <id>DEV</id>

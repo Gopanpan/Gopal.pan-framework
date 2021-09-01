@@ -80,17 +80,16 @@ public abstract class AbstractMQConsumer {
 
     private  String evnTopic(){
         String topic = messageDef.getTopic();
-
         if(messageDef.getMultipleEnv()){
             String activeProfile = SpringContextUtil.getActiveProfile();
-            if(EnvProfile.dev.name().equals(activeProfile)){
-                return StringUtils.join(topic,"_",EnvProfile.dev.name());
-            }else if(EnvProfile.test.name().equals(activeProfile)){
-                return StringUtils.join(topic,"_",EnvProfile.test.name());
-            }else if(EnvProfile.pre.name().equals(activeProfile)){
-                return StringUtils.join(topic,"_",EnvProfile.pre.name());
-            }else if(EnvProfile.pro.name().equals(activeProfile)){
-                return StringUtils.join(topic,"_",EnvProfile.pro.name());
+            if(EnvProfile.DEV.getCode().equals(activeProfile)){
+                return StringUtils.join(topic,"_",EnvProfile.DEV.getCode());
+            }else if(EnvProfile.FAT.getCode().equals(activeProfile)){
+                return StringUtils.join(topic,"_",EnvProfile.FAT.getCode());
+            }else if(EnvProfile.UAT.getCode().equals(activeProfile)){
+                return StringUtils.join(topic,"_",EnvProfile.UAT.getCode());
+            }else if(EnvProfile.PRO.getCode().equals(activeProfile)){
+                return StringUtils.join(topic,"_",EnvProfile.PRO.getCode());
             }
             throw new RuntimeException("no available run environment is specified");
         }else {

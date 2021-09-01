@@ -13,11 +13,12 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public enum EnvProfile {
-    dev  ("开发环境，外部用户无法访问，开发人员使用，版本变动很大"),
-    test ("测试环境，外部用户无法访问，专门给测试人员使用的，版本相对稳定"),
-    pre  ("灰度环境，外部用户可以访问，但是服务器配置相对低，其它和生产一样"),
-    pro  ("生产环境，面向外部用户的环境，连接上互联网即可访问的正式环境");
+    DEV ("dev","Development environment。 开发环境，用于开发者调试使用"),
+    FAT ("fat","Feature Acceptance Test environment。功能验收测试环境，用于软件测试者测试使用"),
+    UAT ("uat","User Acceptance Test environment。 用户验收测试环境，用于生产环境下的软件测试者测试使用"),
+    PRO ("pro","Production environment。生产环境");
 
+    private final String code;
     private final String desc;
 
 }
